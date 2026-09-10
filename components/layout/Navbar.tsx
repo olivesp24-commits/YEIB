@@ -48,7 +48,7 @@ export function Navbar() {
         
         {/* Desktop Actions */}
         <div className="hidden md:flex items-center gap-4">
-          <Button size="sm">
+          <Button size="sm" className="pointer-events-none">
             Apply for funding
           </Button>
         </div>
@@ -85,7 +85,7 @@ export function Navbar() {
           </nav>
           <div className="h-[1px] w-full bg-gray-200" />
           <div className="flex flex-col gap-4 text-center items-center">
-            <Button size="lg" className="w-full" onClick={closeMenu}>
+            <Button size="lg" className="w-full pointer-events-none" onClick={closeMenu}>
               Apply for funding
             </Button>
           </div>

@@ -61,7 +61,7 @@ export function FundingOverview() {
         
         <div className="mt-12 text-center">
           <Link href="/how-it-works">
-            <Button variant="secondary" className="border-[var(--color-evergreen)] text-[var(--color-evergreen)] hover:bg-[var(--color-evergreen)] hover:text-white">
+            <Button variant="secondary" className="border-[var(--color-evergreen)] text-[var(--color-evergreen)] hover:bg-[var(--color-evergreen)] hover:text-white pointer-events-none">
               Explore How It Works
             </Button>
           </Link>

@@ -2,6 +2,8 @@ import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/Card";
 import { Tag } from "@/components/ui/Tag";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { CountUp } from "@/components/ui/CountUp";
+import { UserIcon, UsersIcon, BuildingIcon, TargetIcon } from "lucide-react";
+
 export function EligibilitySection() {
   const tags = [
     "Agriculture", "Creative Industries", "Trade", "ICT", 
@@ -15,10 +17,10 @@ export function EligibilitySection() {
   ];
   
   const eligibilityCards = [
-    { letter: "Y", title: "Youth-Led", desc: "Business owned, managed, or primarily employing people under 35" },
-    { letter: "W", title: "Women-Led", desc: "Businesses with significant women ownership or management" },
-    { letter: "M", title: "Registered MSME", desc: "Formally registered Nigerian business with verifiable track record" },
-    { letter: "P", title: "Priority Sectors", desc: "Agriculture, Creative Industries, Trade, and ICT." }
+    { icon: <UserIcon size={20} />, title: "Youth-Led", desc: "Business owned, managed, or primarily employing people under 35" },
+    { icon: <UsersIcon size={20} />, title: "Women-Led", desc: "Businesses with significant women ownership or management" },
+    { icon: <BuildingIcon size={20} />, title: "Registered MSME", desc: "Formally registered Nigerian business with verifiable track record" },
+    { icon: <TargetIcon size={20} />, title: "Priority Sectors", desc: "Agriculture, Creative Industries, Trade, and ICT." }
   ];
 
   return (
@@ -84,8 +86,8 @@ export function EligibilitySection() {
               <FadeIn key={i} delay={300 + (i * 150)} direction="up" className="h-full">
                 <Card className="bg-white border-[var(--color-pale-oak)]/30 hover:border-[var(--color-mint-leaf)] transition-colors shadow-sm h-full">
                 <CardHeader>
-                  <div className="w-10 h-10 rounded bg-[var(--color-mint-cream)] text-[var(--color-evergreen)] font-bold font-[var(--font-asul)] flex items-center justify-center text-lg mb-4">
-                    {card.letter}
+                  <div className="w-10 h-10 rounded bg-[var(--color-mint-cream)] text-[var(--color-evergreen)] flex items-center justify-center mb-4">
+                    {card.icon}
                   </div>
                   <CardTitle className="text-xl">{card.title}</CardTitle>
                 </CardHeader>

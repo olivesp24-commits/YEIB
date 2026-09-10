@@ -23,7 +23,7 @@ export function Footer() {
               The institutional bridge between capital and ambition, empowering youth-led and women-led MSMEs across Nigeria.
             </p>
             <div className="flex gap-4">
-              <Button variant="secondary" className="bg-white/10 text-white border-none hover:bg-white/20">
+              <Button variant="secondary" className="bg-white/10 text-white border-none hover:bg-white/20 pointer-events-none">
                 Contact Us
               </Button>
             </div>
