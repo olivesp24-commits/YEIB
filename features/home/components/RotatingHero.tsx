@@ -39,7 +39,7 @@ export function RotatingHero() {
   }, [activeIdx, isTransitioning]);
 
   return (
-    <div className="relative w-full h-[100vh] overflow-hidden bg-[var(--color-evergreen)]">
+    <div className="relative w-full h-[100svh] md:h-[100vh] overflow-hidden bg-[var(--color-evergreen)]">
       
       {/* Sliding Track */}
       <div 

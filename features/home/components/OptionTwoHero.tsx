@@ -5,7 +5,7 @@ import Image from "next/image";
 export function OptionTwoHero() {
   return (
     <section 
-      className="relative w-full h-[100vh] flex items-center justify-center overflow-hidden"
+      className="relative w-full h-[100svh] md:h-[100vh] flex items-center justify-center overflow-hidden"
       style={{ background: "linear-gradient(180deg, #00976F 24.52%, #003124 100%)" }}
     >
       
