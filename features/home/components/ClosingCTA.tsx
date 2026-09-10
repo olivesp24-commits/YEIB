@@ -8,14 +8,14 @@ export function ClosingCTA() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/cta-bg.jpg"
-          alt="Modern executive boardroom"
+          src="/asset/closing-cta-section-background-pattern.png"
+          alt="Closing CTA Background Pattern"
           fill
-          className="object-cover object-center opacity-40"
+          className="object-cover object-center opacity-80"
           priority
         />
         {/* Gradient Overlay for better text readability */}
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/60 to-slate-950/80" />
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-900/40 to-slate-950/60" />
       </div>
 
       {/* Decorative Accents */}
@@ -35,7 +35,7 @@ export function ClosingCTA() {
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
           <Link href="/entrepreneurs">
-            <Button size="lg" className="w-full sm:w-auto px-10 py-6 text-lg rounded-full bg-[#00C9A7] hover:bg-[#00b093] text-white border-none shadow-[0_0_20px_rgba(0,201,167,0.4)] transition-all duration-300 pointer-events-auto">
+            <Button size="lg" className="w-full sm:w-auto px-10 py-6 text-lg font-semibold rounded-full bg-white text-[#003B2B] border-none pointer-events-none">
               Apply for funding
             </Button>
           </Link>
