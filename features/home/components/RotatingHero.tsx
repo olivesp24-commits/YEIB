@@ -50,14 +50,14 @@ export function RotatingHero() {
         }}
       >
         <div className="w-full h-full flex-shrink-0">
-          <Hero />
+          <Hero isActive={activeIdx === 0 || activeIdx === 2} />
         </div>
         <div className="w-full h-full flex-shrink-0">
-          <OptionTwoHero />
+          <OptionTwoHero isActive={activeIdx === 1} />
         </div>
         {/* Duplicate of Slide 1 for seamless looping */}
         <div className="w-full h-full flex-shrink-0">
-          <Hero />
+          <Hero isActive={activeIdx === 0 || activeIdx === 2} />
         </div>
       </div>
 

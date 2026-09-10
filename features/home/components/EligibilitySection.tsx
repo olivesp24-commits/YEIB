@@ -1,6 +1,8 @@
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/Card";
 import { Tag } from "@/components/ui/Tag";
 import { FadeIn } from "@/components/ui/FadeIn";
+import { CountUp } from "@/components/ui/CountUp";
+
 export function EligibilitySection() {
   const tags = [
     "Agriculture", "Creative Industries", "Trade", "ICT", 
@@ -51,9 +53,10 @@ export function EligibilitySection() {
           </div>
         </FadeIn>
 
-        <FadeIn delay={200} direction="up" className="flex flex-col lg:flex-row gap-12 lg:gap-16">
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
           {/* Left Column: Goals */}
-          <div className="lg:w-1/3 bg-[var(--color-evergreen)] rounded-3xl p-8 md:p-10 text-white shadow-xl flex flex-col justify-between">
+          <FadeIn delay={200} direction="up" className="lg:w-1/3">
+            <div className="bg-[var(--color-evergreen)] rounded-3xl p-8 md:p-10 text-white shadow-xl flex flex-col justify-between h-full">
             <h3 className="font-bold text-xs tracking-[0.2em] uppercase text-white/70 mb-12 text-center">
               Our Goals
             </h3>
@@ -61,7 +64,7 @@ export function EligibilitySection() {
               {goals.map((goal, i) => (
                 <div key={i} className="pb-8 border-b border-white/10 last:border-0 last:pb-0">
                   <div className="font-[var(--font-asul)] text-4xl sm:text-5xl md:text-6xl font-bold mb-2">
-                    {goal.value}
+                    <CountUp text={goal.value} />
                   </div>
                   <div className="text-white/80 mb-4 text-sm font-medium">
                     {goal.label}
@@ -73,12 +76,14 @@ export function EligibilitySection() {
                 </div>
               ))}
             </div>
-          </div>
+            </div>
+          </FadeIn>
 
           {/* Right Column: Eligibility Cards */}
           <div className="lg:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-6">
             {eligibilityCards.map((card, i) => (
-              <Card key={i} className="bg-white border-[var(--color-pale-oak)]/30 hover:border-[var(--color-mint-leaf)] transition-colors shadow-sm h-full">
+              <FadeIn key={i} delay={300 + (i * 150)} direction="up" className="h-full">
+                <Card className="bg-white border-[var(--color-pale-oak)]/30 hover:border-[var(--color-mint-leaf)] transition-colors shadow-sm h-full">
                 <CardHeader>
                   <div className="w-10 h-10 rounded bg-[var(--color-mint-cream)] text-[var(--color-evergreen)] font-bold font-[var(--font-asul)] flex items-center justify-center text-lg mb-4">
                     {card.letter}
@@ -88,10 +93,11 @@ export function EligibilitySection() {
                 <CardContent className="text-sm text-[var(--color-evergreen)]/70 leading-relaxed pt-0">
                   {card.desc}
                 </CardContent>
-              </Card>
+                </Card>
+              </FadeIn>
             ))}
           </div>
-        </FadeIn>
+        </div>
       </div>
     </section>
   );

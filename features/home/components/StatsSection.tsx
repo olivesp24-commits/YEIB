@@ -19,59 +19,67 @@ export function StatsSection() {
           </h2>
         </FadeIn>
         
-        <FadeIn delay={200} direction="up" className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <CardStatBlock 
-            value="4,000+" 
-            label="Direct and Indirect Jobs" 
-            source="FY2025" 
-          >
-            <div className="mt-4 text-sm text-[var(--color-evergreen)]/70">
-              Successfully created and sustained through strategic SME investments.
-            </div>
-            <div className="absolute -top-4 -right-4 w-24 h-24 bg-[var(--color-mint-cream)] rounded-full flex items-center justify-center opacity-50 pointer-events-none">
-              <BriefcaseIcon size={48} className="text-[var(--color-evergreen)]/20" />
-            </div>
-          </CardStatBlock>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <FadeIn delay={200} direction="up" className="h-full">
+            <CardStatBlock 
+              value="4,000+" 
+              label="Direct and Indirect Jobs" 
+              source="FY2025" 
+            >
+              <div className="mt-4 text-sm text-[var(--color-evergreen)]/70">
+                Successfully created and sustained through strategic SME investments.
+              </div>
+              <div className="absolute -top-4 -right-4 w-24 h-24 bg-[var(--color-mint-cream)] rounded-full flex items-center justify-center opacity-50 pointer-events-none">
+                <BriefcaseIcon size={48} className="text-[var(--color-evergreen)]/20" />
+              </div>
+            </CardStatBlock>
+          </FadeIn>
 
-          <CardStatBlock 
-            value="200+" 
-            label="ESOs Mobilised" 
-            source="FY2025" 
-          >
-            <div className="mt-4 text-sm text-[var(--color-evergreen)]/70">
-              Entrepreneur Support Organisations activated to provide local support.
-            </div>
-            <div className="absolute -top-4 -right-4 w-24 h-24 bg-[var(--color-mint-cream)] rounded-full flex items-center justify-center opacity-50 pointer-events-none">
-              <UsersIcon size={48} className="text-[var(--color-evergreen)]/20" />
-            </div>
-          </CardStatBlock>
+          <FadeIn delay={300} direction="up" className="h-full">
+            <CardStatBlock 
+              value="200+" 
+              label="ESOs Mobilised" 
+              source="FY2025" 
+            >
+              <div className="mt-4 text-sm text-[var(--color-evergreen)]/70">
+                Entrepreneur Support Organisations activated to provide local support.
+              </div>
+              <div className="absolute -top-4 -right-4 w-24 h-24 bg-[var(--color-mint-cream)] rounded-full flex items-center justify-center opacity-50 pointer-events-none">
+                <UsersIcon size={48} className="text-[var(--color-evergreen)]/20" />
+              </div>
+            </CardStatBlock>
+          </FadeIn>
 
-          <CardStatBlock 
-            value="Year 5" 
-            label="Gender Parity Target" 
-            source="FY2025" 
-          >
-            <div className="mt-4 text-sm text-[var(--color-evergreen)]/70">
-              On track to reach equal male-to-female founder representation.
-            </div>
-            <div className="absolute -top-4 -right-4 w-24 h-24 bg-[var(--color-mint-cream)] rounded-full flex items-center justify-center opacity-50 pointer-events-none">
-              <TargetIcon size={48} className="text-[var(--color-evergreen)]/20" />
-            </div>
-          </CardStatBlock>
+          <FadeIn delay={400} direction="up" className="h-full">
+            <CardStatBlock 
+              value="Year 5" 
+              label="Gender Parity Target" 
+              source="FY2025" 
+            >
+              <div className="mt-4 text-sm text-[var(--color-evergreen)]/70">
+                On track to reach equal male-to-female founder representation.
+              </div>
+              <div className="absolute -top-4 -right-4 w-24 h-24 bg-[var(--color-mint-cream)] rounded-full flex items-center justify-center opacity-50 pointer-events-none">
+                <TargetIcon size={48} className="text-[var(--color-evergreen)]/20" />
+              </div>
+            </CardStatBlock>
+          </FadeIn>
 
-          <CardStatBlock 
-            value="10,000+" 
-            label="Businesses Supported" 
-            source="FY2025" 
-          >
-            <div className="mt-4 text-sm text-[var(--color-evergreen)]/70">
-              Micro, small, and medium enterprises empowered with necessary resources.
-            </div>
-            <div className="absolute -top-4 -right-4 w-24 h-24 bg-[var(--color-mint-cream)] rounded-full flex items-center justify-center opacity-50 pointer-events-none">
-              <TrendingUpIcon size={48} className="text-[var(--color-evergreen)]/20" />
-            </div>
-          </CardStatBlock>
-        </FadeIn>
+          <FadeIn delay={500} direction="up" className="h-full">
+            <CardStatBlock 
+              value="10,000+" 
+              label="Businesses Supported" 
+              source="FY2025" 
+            >
+              <div className="mt-4 text-sm text-[var(--color-evergreen)]/70">
+                Micro, small, and medium enterprises empowered with necessary resources.
+              </div>
+              <div className="absolute -top-4 -right-4 w-24 h-24 bg-[var(--color-mint-cream)] rounded-full flex items-center justify-center opacity-50 pointer-events-none">
+                <TrendingUpIcon size={48} className="text-[var(--color-evergreen)]/20" />
+              </div>
+            </CardStatBlock>
+          </FadeIn>
+        </div>
       </div>
     </section>
   );
