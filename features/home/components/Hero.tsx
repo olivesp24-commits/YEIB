@@ -3,7 +3,7 @@ import { FadeIn } from "@/components/ui/FadeIn";
 
 export function Hero() {
   return (
-    <section className="relative w-full h-[600px] md:h-[800px] flex items-center justify-center overflow-hidden">
+    <section className="relative w-full h-[500px] sm:h-[600px] md:h-[800px] flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -11,9 +11,9 @@ export function Hero() {
       />
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 md:px-8 text-center text-white max-w-4xl pt-20">
+      <div className="relative z-10 container mx-auto px-4 md:px-8 text-center text-white max-w-4xl pt-16 md:pt-20">
         <FadeIn direction="up">
-          <h1 className="mb-8 font-[var(--font-asul)] text-4xl md:text-6xl lg:text-[72px] leading-tight font-bold text-white drop-shadow-md">
+          <h1 className="mb-8 font-[var(--font-asul)] text-3xl sm:text-4xl md:text-6xl lg:text-[72px] leading-[1.2] md:leading-tight font-bold text-white drop-shadow-md">
             The institutional bridge between capital and ambition
           </h1>
         </FadeIn>

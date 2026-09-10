@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export function OptionTwoHero() {
   return (
-    <section className="relative w-full h-[600px] md:h-[800px] flex items-center justify-center bg-[var(--color-evergreen)] overflow-hidden">
+    <section className="relative w-full h-[500px] sm:h-[600px] md:h-[800px] flex items-center justify-center bg-[var(--color-evergreen)] overflow-hidden">
       
       {/* Background Image from Option Two */}
       <div 
@@ -13,9 +13,9 @@ export function OptionTwoHero() {
       />
       
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 md:px-8 text-center text-white max-w-[940px] flex flex-col items-center">
+      <div className="relative z-10 container mx-auto px-4 md:px-8 text-center text-white max-w-[940px] flex flex-col items-center pt-16 md:pt-0">
         <FadeIn direction="up">
-          <h1 className="mb-12 font-[var(--font-asul)] text-5xl md:text-6xl lg:text-[72px] leading-[1.1] font-bold text-white drop-shadow-sm">
+          <h1 className="mb-8 md:mb-12 font-[var(--font-asul)] text-3xl sm:text-4xl md:text-6xl lg:text-[72px] leading-[1.2] md:leading-[1.1] font-bold text-white drop-shadow-sm">
             The institutional bridge between capital and ambition
           </h1>
         </FadeIn>
