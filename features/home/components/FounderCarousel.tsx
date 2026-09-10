@@ -101,7 +101,7 @@ export function FounderCarousel() {
                   <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-evergreen)]/90 via-[var(--color-evergreen)]/40 to-transparent" />
                   
                   <div className="relative z-10 p-6">
-                    <Tag variant="default" className="mb-4 bg-white/20 text-white backdrop-blur-md border-white/30">
+                    <Tag variant="soft" className="mb-4 bg-white/20 text-white backdrop-blur-md border-white/30">
                       {founder.industry}
                     </Tag>
                     <h3 className="text-white text-2xl font-bold mb-1">{founder.name}</h3>
