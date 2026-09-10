@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --color-evergreen: #003124;
+  --color-mint-leaf: #00BE93;
+  --color-mint-cream: #F2FBF6;
+  --color-tiger-orange: #F88404;
+  --color-pale-oak: #E1C9B3;
+
+  --font-asul: var(--font-asul), serif;
+  --font-chivo: var(--font-chivo), sans-serif;
+  --font-general-sans: var(--font-general-sans), sans-serif;
+
+  --background-color: var(--color-mint-cream);
+  --text-color: var(--color-evergreen);
+}
+
+:root {
+  --background: #F2FBF6; /* Mint Cream base */
+  --foreground: #003124; /* Evergreen text */
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-chivo);
+}
+
+/* Base heading styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-asul);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 56px;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 28px;
+}
+h4 {
+  font-size: 22px;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-50% - 12px)); }
+}
+
+.animate-marquee {
+  animation: marquee 35s linear infinite;
+  display: flex;
+  width: max-content;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
