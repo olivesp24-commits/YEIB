@@ -3,12 +3,10 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/Button";
 import { Menu, X } from "lucide-react";
 
 export function Navbar() {
-  const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -43,19 +41,13 @@ export function Navbar() {
           <Link href="/investors" className="text-sm font-medium text-[var(--color-evergreen)] hover:text-[var(--color-mint-leaf)] transition-colors">
             Partners
           </Link>
+          <Link href="/esg" className="text-sm font-medium text-[var(--color-evergreen)] hover:text-[var(--color-mint-leaf)] transition-colors">
+            ESG
+          </Link>
         </nav>
         
         {/* Desktop Actions */}
         <div className="hidden md:flex items-center gap-4">
-          {pathname === "/option-two" ? (
-            <Link href="/" className="text-sm font-semibold text-[var(--color-evergreen)] hover:text-[var(--color-mint-leaf)] transition-colors">
-              Option 1
-            </Link>
-          ) : (
-            <Link href="/option-two" className="text-sm font-semibold text-[var(--color-evergreen)] hover:text-[var(--color-mint-leaf)] transition-colors">
-              Option 2
-            </Link>
-          )}
           <Button size="sm">
             Apply for funding
           </Button>
@@ -87,18 +79,12 @@ export function Navbar() {
             <Link href="/investors" onClick={closeMenu} className="text-lg font-medium text-[var(--color-evergreen)]">
               Partners
             </Link>
+            <Link href="/esg" onClick={closeMenu} className="text-lg font-medium text-[var(--color-evergreen)]">
+              ESG
+            </Link>
           </nav>
           <div className="h-[1px] w-full bg-gray-200" />
           <div className="flex flex-col gap-4 text-center items-center">
-            {pathname === "/option-two" ? (
-              <Link href="/" onClick={closeMenu} className="text-lg font-semibold text-[var(--color-evergreen)]">
-                Switch to Option 1
-              </Link>
-            ) : (
-              <Link href="/option-two" onClick={closeMenu} className="text-lg font-semibold text-[var(--color-evergreen)]">
-                Switch to Option 2
-              </Link>
-            )}
             <Button size="lg" className="w-full" onClick={closeMenu}>
               Apply for funding
             </Button>

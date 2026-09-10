@@ -36,7 +36,11 @@ export function FadeIn({
       observer.observe(currentRef);
     }
 
+    // Failsafe: Force visibility after a delay if observer fails
+    const fallback = setTimeout(() => setIsVisible(true), 1500);
+
     return () => {
+      clearTimeout(fallback);
       if (currentRef) {
         observer.unobserve(currentRef);
       }

@@ -79,20 +79,21 @@ export function FounderCarousel() {
   const duplicatedFounders = [...founders, ...founders];
 
   return (
-    <section className="py-20 md:py-32 bg-white overflow-hidden">
+    <section className="py-16 md:py-32 bg-white overflow-hidden">
       <div className="container mx-auto px-4">
         <FadeIn direction="up">
           <p className="text-[var(--color-tiger-orange)] font-bold text-sm tracking-wider uppercase mb-12 ml-4">
             Our Target Audience
           </p>
         </FadeIn>
+      </div>
         
-        <FadeIn delay={200} direction="up" className="relative w-full overflow-hidden mt-8">
+      <FadeIn delay={200} direction="up" className="relative w-full overflow-x-hidden mt-8 py-4">
           {/* Carousel Container */}
-          <div className="flex animate-marquee gap-6 pb-8">
+          <div className="flex animate-marquee gap-6 px-4">
             {duplicatedFounders.map((founder, index) => (
               <div key={`${founder.id}-${index}`} className="min-w-[280px] w-[280px] md:min-w-[320px] md:w-[320px]">
-                <Card className="h-[400px] flex flex-col justify-end relative overflow-hidden group border-0 shadow-lg cursor-pointer">
+              <Card className="h-[400px] flex flex-col justify-end relative overflow-hidden group border-0 shadow-lg cursor-pointer rounded-3xl">
                   <div 
                     className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
                     style={{ backgroundImage: `url(${founder.image})` }}
@@ -112,7 +113,6 @@ export function FounderCarousel() {
             ))}
           </div>
         </FadeIn>
-      </div>
     </section>
   );
 }

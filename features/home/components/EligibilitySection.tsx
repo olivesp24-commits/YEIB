@@ -21,7 +21,7 @@ export function EligibilitySection() {
   ];
 
   return (
-    <section className="py-24 bg-white border-b border-[var(--color-pale-oak)]/20 relative overflow-hidden">
+    <section className="py-16 md:py-24 bg-white border-b border-[var(--color-pale-oak)]/20 relative overflow-hidden">
       <div 
         className="absolute inset-0 z-0 pointer-events-none bg-cover bg-center bg-no-repeat" 
         style={{ backgroundImage: 'url("/asset/Eligibility-section-background-pattern.png")' }}
@@ -32,7 +32,7 @@ export function EligibilitySection() {
           <p className="text-[var(--color-tiger-orange)] font-bold text-sm tracking-wider uppercase mb-4">
             Eligibility
           </p>
-          <h2 className="font-[var(--font-asul)] text-4xl md:text-5xl font-bold text-[var(--color-evergreen)] mb-4">
+          <h2 className="font-[var(--font-asul)] text-3xl sm:text-4xl md:text-5xl font-bold text-[var(--color-evergreen)] mb-4">
             Built for founders under <span className="text-[var(--color-tiger-orange)]">35</span>
           </h2>
           <p className="text-lg text-[var(--color-evergreen)]/80 max-w-2xl mb-8">
@@ -51,7 +51,7 @@ export function EligibilitySection() {
           </div>
         </FadeIn>
 
-        <FadeIn delay={200} direction="up" className="flex flex-col lg:flex-row gap-16">
+        <FadeIn delay={200} direction="up" className="flex flex-col lg:flex-row gap-12 lg:gap-16">
           {/* Left Column: Goals */}
           <div className="lg:w-1/3 bg-[var(--color-evergreen)] rounded-3xl p-8 md:p-10 text-white shadow-xl flex flex-col justify-between">
             <h3 className="font-bold text-xs tracking-[0.2em] uppercase text-white/70 mb-12 text-center">
@@ -60,7 +60,7 @@ export function EligibilitySection() {
             <div className="space-y-8">
               {goals.map((goal, i) => (
                 <div key={i} className="pb-8 border-b border-white/10 last:border-0 last:pb-0">
-                  <div className="font-[var(--font-asul)] text-5xl md:text-6xl font-bold mb-2">
+                  <div className="font-[var(--font-asul)] text-4xl sm:text-5xl md:text-6xl font-bold mb-2">
                     {goal.value}
                   </div>
                   <div className="text-white/80 mb-4 text-sm font-medium">

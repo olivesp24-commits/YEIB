@@ -4,7 +4,7 @@ import { BriefcaseIcon, TrendingUpIcon, UsersIcon, TargetIcon } from "lucide-rea
 
 export function StatsSection() {
   return (
-    <section className="py-20 md:py-32 bg-[var(--color-pale-oak)]/10 relative overflow-hidden">
+    <section className="py-16 md:py-32 bg-[var(--color-pale-oak)]/10 relative overflow-hidden">
       <div 
         className="absolute inset-0 z-0 pointer-events-none bg-cover bg-center bg-no-repeat" 
         style={{ backgroundImage: 'url("/asset/goals-section-background-pattern.png")' }}
@@ -14,7 +14,7 @@ export function StatsSection() {
           <p className="text-[var(--color-tiger-orange)] font-bold text-sm tracking-wider uppercase mb-4">
             Goals
           </p>
-          <h2 className="font-[var(--font-asul)] text-4xl md:text-5xl font-bold text-[var(--color-evergreen)]">
+          <h2 className="font-[var(--font-asul)] text-3xl sm:text-4xl md:text-5xl font-bold text-[var(--color-evergreen)]">
             20-year Targets
           </h2>
         </FadeIn>
