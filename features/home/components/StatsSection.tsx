@@ -7,7 +7,7 @@ export function StatsSection() {
     <section className="py-16 md:py-32 bg-[var(--color-pale-oak)]/10 relative overflow-hidden">
       <div 
         className="absolute inset-0 z-0 pointer-events-none bg-cover bg-center bg-no-repeat" 
-        style={{ backgroundImage: 'url("/asset/goals-section-background-pattern.png")' }}
+        style={{ backgroundImage: 'url("/asset/goals-section-background-pattern.png?v=2")' }}
       />
       <div className="container mx-auto px-4 max-w-6xl relative z-10">
         <FadeIn direction="up" className="mb-12">
