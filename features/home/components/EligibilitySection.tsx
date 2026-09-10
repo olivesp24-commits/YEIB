@@ -1,6 +1,7 @@
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/Card";
 import { Tag } from "@/components/ui/Tag";
 import { FadeIn } from "@/components/ui/FadeIn";
+import { CountUp } from "@/components/ui/CountUp";
 export function EligibilitySection() {
   const tags = [
     "Agriculture", "Creative Industries", "Trade", "ICT", 
@@ -62,7 +63,7 @@ export function EligibilitySection() {
               {goals.map((goal, i) => (
                 <div key={i} className="pb-8 border-b border-white/10 last:border-0 last:pb-0">
                   <div className="font-[var(--font-asul)] text-4xl sm:text-5xl md:text-6xl font-bold mb-2">
-                    {goal.value}
+                    <CountUp text={goal.value} />
                   </div>
                   <div className="text-white/80 mb-4 text-sm font-medium">
                     {goal.label}

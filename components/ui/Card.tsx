@@ -1,5 +1,6 @@
 import * as React from "react";
 import { cn } from "@/lib/utils";
+import { CountUp } from "@/components/ui/CountUp";
 
 const Card = React.forwardRef<
   HTMLDivElement,
@@ -92,7 +93,7 @@ const CardStatBlock = React.forwardRef<HTMLDivElement, CardStatBlockProps>(
       )}
       {...props}
     >
-      {value && <div className="text-4xl md:text-5xl font-bold font-[var(--font-asul)] mb-2">{value}</div>}
+      {value && <div className="text-4xl md:text-5xl font-bold font-[var(--font-asul)] mb-2"><CountUp text={value} /></div>}
       {label && <div className="text-sm font-semibold opacity-90">{label}</div>}
       {children}
       {source && (
