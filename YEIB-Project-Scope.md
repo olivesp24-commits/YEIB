@@ -253,3 +253,4 @@ yeib-investment-fund/
 ---
 
 *This document sets design and content direction only. Final copy, imagery, and page-level wireframes to be developed in the next phase, ideally once the Figma frames can be reviewed directly.*
+  

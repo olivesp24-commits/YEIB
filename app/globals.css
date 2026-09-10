@@ -16,8 +16,10 @@
 }
 
 :root {
-  --background: #F2FBF6; /* Mint Cream base */
-  --foreground: #003124; /* Evergreen text */
+  --background: #F2FBF6;
+  /* Mint Cream base */
+  --foreground: #003124;
+  /* Evergreen text */
 }
 
 body {
@@ -27,7 +29,12 @@ body {
 }
 
 /* Base heading styles */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-asul);
   font-weight: 700;
 }
@@ -35,19 +42,27 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 56px;
 }
+
 h2 {
   font-size: 40px;
 }
+
 h3 {
   font-size: 28px;
 }
+
 h4 {
   font-size: 22px;
 }
 
 @keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(calc(-50% - 12px)); }
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-50% - 12px));
+  }
 }
 
 .animate-marquee {
