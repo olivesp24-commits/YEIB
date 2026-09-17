@@ -1,0 +1,22 @@
+import { ESGHero } from "@/features/esg/components/ESGHero";
+import { OurApproach } from "@/features/esg/components/OurApproach";
+import { DocumentLibrary } from "@/features/esg/components/DocumentLibrary";
+import { ESGPartnerships } from "@/features/esg/components/ESGPartnerships";
+import { ESGContactChannels } from "@/features/esg/components/ESGContactChannels";
+
+export const metadata = {
+  title: 'ESG & Sustainability | YEIB',
+  description: 'Our approach to responsible investment, environmental and social risk management, transparency, and accountability.',
+};
+
+export default function ESGPage() {
+  return (
+    <div className="flex flex-col min-h-screen">
+      <ESGHero />
+      <OurApproach />
+      <DocumentLibrary />
+      <ESGPartnerships />
+      <ESGContactChannels />
+    </div>
+  );
+}

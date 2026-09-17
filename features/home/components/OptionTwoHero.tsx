@@ -33,10 +33,10 @@ export function OptionTwoHero({ isActive = true }: { isActive?: boolean }) {
             isActive ? "opacity-100 translate-y-0 delay-500" : "opacity-0 translate-y-12"
           )}
         >
-          <Button size="lg" className="w-full sm:w-auto bg-white text-[var(--color-evergreen)] hover:bg-[var(--color-mint-cream)] pointer-events-none">
+          <Button size="lg" className="w-full sm:w-auto bg-[var(--color-tiger-orange)] text-white hover:bg-[var(--color-tiger-orange)]/90 hover:opacity-100 border border-[var(--color-tiger-orange)]">
             Apply for funding
           </Button>
-          <Button size="lg" variant="secondary" className="w-full sm:w-auto bg-transparent text-white border-white hover:bg-white/10 pointer-events-none">
+          <Button size="lg" variant="secondary" className="w-full sm:w-auto bg-transparent text-white border-white hover:bg-white/10">
             Read our approach
           </Button>
         </div>

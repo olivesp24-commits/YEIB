@@ -1,0 +1,51 @@
+import { FadeIn } from "@/components/ui/FadeIn";
+import { Button } from "@/components/ui/Button";
+import Image from "next/image";
+
+export function EntrepreneursHero() {
+  return (
+    <section 
+      className="relative w-full min-h-[100svh] flex items-center justify-start overflow-hidden"
+    >
+      {/* Full Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-[position:right_center] md:bg-[position:80%_center] bg-no-repeat"
+        style={{ backgroundImage: 'url("/asset/who-we-serve-hero-section-background-pattern.png")' }}
+      />
+      
+      {/* Gradient Overlay for Text Readability */}
+      <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-evergreen)]/90 via-[var(--color-evergreen)]/50 to-transparent pointer-events-none" />
+
+      {/* Content Aligned to Left */}
+      <div className="relative z-10 container mx-auto px-4 md:px-8 text-left text-white max-w-6xl flex flex-col justify-center h-full">
+        <div className="max-w-xl mt-20 md:mt-0">
+          <FadeIn direction="up">
+            <div className="inline-block px-4 py-1.5 rounded-full bg-[var(--color-tiger-orange)] text-white text-xs font-bold tracking-widest uppercase mb-8">
+              Founders
+            </div>
+            
+            <h1 className="mb-6 font-[var(--font-asul)] text-4xl lg:text-5xl leading-[1.15] font-bold text-white drop-shadow-sm">
+              Capital and support, <br className="hidden md:block" />
+              structured for how <br className="hidden md:block" />
+              your business <br className="hidden md:block" />
+              grows.
+            </h1>
+            
+            <p className="text-lg md:text-xl text-white/90 leading-relaxed font-medium mb-10">
+              We don&apos;t just invest where you are leading. YEIB is an institutional bridge connecting you to — equity, credit guarantees, and ecosystem support — across stages. Because true potential needs patient momentum to reach your goals.
+            </p>
+
+            <div className="flex flex-col sm:flex-row justify-start items-center gap-4">
+              <Button size="lg" className="w-full sm:w-auto bg-[var(--color-tiger-orange)] text-white hover:bg-[var(--color-tiger-orange)]/90 hover:opacity-100 border border-[var(--color-tiger-orange)]">
+                Apply for funding
+              </Button>
+              <Button size="lg" variant="secondary" className="w-full sm:w-auto bg-transparent text-white border-white hover:bg-white/10">
+                Read our approach
+              </Button>
+            </div>
+          </FadeIn>
+        </div>
+      </div>
+    </section>
+  );
+}

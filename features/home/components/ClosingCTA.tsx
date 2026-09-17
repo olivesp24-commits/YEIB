@@ -18,12 +18,12 @@ export function ClosingCTA() {
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 relative z-10">
             <Link href="/entrepreneurs">
-              <Button size="lg" className="w-full sm:w-auto pointer-events-none">
+              <Button size="lg" className="w-full sm:w-auto bg-[var(--color-tiger-orange)] text-white hover:bg-[var(--color-tiger-orange)]/90 hover:opacity-100">
                 Apply for Funding
               </Button>
             </Link>
             <Link href="/investors">
-              <Button size="lg" variant="secondary" className="w-full sm:w-auto border-[var(--color-evergreen)] text-[var(--color-evergreen)] hover:bg-[var(--color-evergreen)] hover:text-white pointer-events-none">
+              <Button size="lg" variant="secondary" className="w-full sm:w-auto border-[var(--color-evergreen)] text-[var(--color-evergreen)] hover:bg-[var(--color-evergreen)] hover:text-white">
                 Partner with YEIB
               </Button>
             </Link>
