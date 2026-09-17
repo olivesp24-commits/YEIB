@@ -105,7 +105,7 @@ export function GrowthCapital() {
       >
         <motion.div style={{ y, width: "100%", height: "120%" }} className="absolute -top-[10%] left-0">
           <Image 
-            src="/asset/generated/growth_capital_minimal.jpg"
+            src="/asset/section-image.png"
             alt="Minimalist architectural office space"
             fill
             className="object-cover object-center"

@@ -42,8 +42,8 @@ export function ImpactHero() {
         {/* Placeholder for construction workers image */}
         <div className="absolute inset-0 bg-gray-300 animate-pulse" />
         <Image 
-          src="/asset/impact-hero.jpg" 
-          alt="Workers collaborating on construction site" 
+          src="/asset/impact-hero-section-image.png" 
+          alt="Impact Metrics" 
           fill
           className="object-cover object-center relative z-10"
         />

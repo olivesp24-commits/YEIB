@@ -23,6 +23,7 @@ export function Navbar() {
             alt="YEIB Investment Fund" 
             width={240} 
             height={64}
+            unoptimized={true}
             className="h-6 sm:h-8 md:h-10 w-auto object-contain"
           />
         </Link>

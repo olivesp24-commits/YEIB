@@ -6,16 +6,18 @@ export function EntrepreneursHero() {
   return (
     <section 
       className="relative w-full min-h-[100svh] flex items-center justify-start overflow-hidden"
+      style={{ background: "linear-gradient(180deg, #00976F 24.52%, #003124 100%)" }}
     >
-      {/* Full Background Image */}
+      {/* Background Image anchored to the right with a soft fade */}
       <div 
-        className="absolute inset-0 bg-cover bg-[position:right_center] md:bg-[position:80%_center] bg-no-repeat"
-        style={{ backgroundImage: 'url("/asset/who-we-serve-hero-section-background-pattern.png")' }}
+        className="absolute inset-0 bg-[length:auto_130%] bg-[position:right_center] bg-no-repeat opacity-60 md:opacity-100"
+        style={{ 
+          backgroundImage: 'url("/asset/who-we-serve-hero-section-background-pattern.png")',
+          maskImage: 'linear-gradient(to right, transparent, black 40%)',
+          WebkitMaskImage: 'linear-gradient(to right, transparent, black 40%)'
+        }}
       />
       
-      {/* Gradient Overlay for Text Readability */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-evergreen)]/90 via-[var(--color-evergreen)]/50 to-transparent pointer-events-none" />
-
       {/* Content Aligned to Left */}
       <div className="relative z-10 container mx-auto px-4 md:px-8 text-left text-white max-w-6xl flex flex-col justify-center h-full">
         <div className="max-w-xl mt-20 md:mt-0">

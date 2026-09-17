@@ -5,13 +5,24 @@ import Image from "next/image";
 export function AboutHero() {
   return (
     <section 
-      className="relative w-full min-h-[100svh] flex items-center overflow-hidden pt-24 md:pt-0"
+      className="relative w-full min-h-[100svh] flex items-center justify-start overflow-hidden"
       style={{ background: "linear-gradient(180deg, #00976F 24.52%, #003124 100%)" }}
     >
-      <div className="container mx-auto px-4 max-w-6xl relative z-10 flex flex-col md:flex-row h-full">
-        <div className="w-full md:w-[55%] pt-12 pb-[35vh] md:py-32 flex flex-col justify-center text-center md:text-left z-20">
+      {/* Background Image anchored to the right with a soft fade */}
+      <div 
+        className="absolute inset-0 bg-[length:auto_130%] bg-[position:calc(100%+150px)_center] bg-no-repeat opacity-60 md:opacity-100"
+        style={{ 
+          backgroundImage: 'url("/asset/what-we-do-hero-section-background-pattern.png")',
+          maskImage: 'linear-gradient(to right, transparent, black 40%)',
+          WebkitMaskImage: 'linear-gradient(to right, transparent, black 40%)'
+        }}
+      />
+      
+      {/* Content Aligned to Left */}
+      <div className="relative z-10 container mx-auto px-4 md:px-8 text-left text-white max-w-6xl flex flex-col justify-center h-full">
+        <div className="max-w-xl mt-20 md:mt-0">
           <FadeIn direction="up">
-            <h1 className="font-[var(--font-asul)] text-4xl lg:text-5xl leading-[1.15] font-bold text-white mb-6 tracking-tight">
+            <h1 className="mb-6 font-[var(--font-asul)] text-4xl lg:text-5xl leading-[1.15] font-bold text-white drop-shadow-sm">
               We exist to dismantle <br />
               the barriers standing <br />
               between young founders <br />
@@ -31,19 +42,6 @@ export function AboutHero() {
             </div>
           </FadeIn>
         </div>
-      </div>
-
-      {/* Right side image - Positioned absolutely to fill the height */}
-      <div className="absolute bottom-0 right-0 w-full md:w-1/2 h-[35vh] md:h-full z-10 pointer-events-none opacity-40 md:opacity-100 flex justify-end">
-        <FadeIn direction="up" delay={200} className="w-full h-full relative">
-          <Image 
-            src="/asset/what-we-do-hero-image.png"
-            alt="YEIB founders" 
-            fill
-            priority
-            className="object-contain object-bottom md:object-right-bottom drop-shadow-2xl"
-          />
-        </FadeIn>
       </div>
     </section>
   );

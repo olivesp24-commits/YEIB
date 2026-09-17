@@ -67,9 +67,9 @@ export function OurApproach() {
           </h2>
         </div>
 
-        <div className="flex flex-col md:flex-row relative">
-          {/* Left Column: Timeline Items */}
-          <div className="w-full md:w-1/2 md:pr-16 relative">
+        <div className="flex flex-col md:flex-row-reverse relative">
+          {/* Right Column (Visually on Right): Timeline Items */}
+          <div className="w-full md:w-1/2 md:pl-16 relative">
             {/* Vertical Line */}
             <div className="absolute left-[11px] top-4 bottom-4 w-px bg-[var(--color-evergreen)]/20 hidden md:block"></div>
 

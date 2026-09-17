@@ -2,6 +2,7 @@
 
 import { CountUp } from "@/components/ui/CountUp";
 import { motion } from "framer-motion";
+import { AnimatedStats } from "@/features/home/components/AnimatedStats";
 
 export function ImpactTargets() {
   const targets = [

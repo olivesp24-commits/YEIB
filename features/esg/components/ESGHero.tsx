@@ -41,8 +41,8 @@ export function ESGHero() {
         {/* Placeholder for ESG hero image */}
         <div className="absolute inset-0 bg-gray-300 animate-pulse" />
         <Image 
-          src="/asset/esg-hero.jpg" 
-          alt="African professionals inspecting a sustainable energy project" 
+          src="/asset/esg-hero-section-image.png" 
+          alt="ESG and Sustainability" 
           fill
           className="object-cover object-center relative z-10"
         />
