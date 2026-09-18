@@ -45,13 +45,21 @@ export function Navbar() {
           <Link href="/esg" className="text-sm font-medium text-[var(--color-evergreen)] hover:text-[var(--color-mint-leaf)] transition-colors">
             ESG
           </Link>
+          <Link href="/contact" className="text-sm font-medium text-[var(--color-evergreen)] hover:text-[var(--color-mint-leaf)] transition-colors">
+            Contact
+          </Link>
+          <Link href="/form" className="text-sm font-medium text-[var(--color-evergreen)] hover:text-[var(--color-mint-leaf)] transition-colors">
+            Form
+          </Link>
         </nav>
         
         {/* Desktop Actions */}
         <div className="hidden md:flex items-center gap-4">
-          <Button size="sm" className="bg-[var(--color-tiger-orange)] text-white hover:bg-[var(--color-tiger-orange)]/90 hover:opacity-100">
-            Apply for funding
-          </Button>
+          <Link href="/apply">
+            <Button size="sm" className="bg-[var(--color-tiger-orange)] text-white hover:bg-[var(--color-tiger-orange)]/90 hover:opacity-100">
+              Apply for funding
+            </Button>
+          </Link>
         </div>
 
         {/* Mobile Toggle Button */}
@@ -83,12 +91,20 @@ export function Navbar() {
             <Link href="/esg" onClick={closeMenu} className="text-lg font-medium text-[var(--color-evergreen)]">
               ESG
             </Link>
+            <Link href="/contact" onClick={closeMenu} className="text-lg font-medium text-[var(--color-evergreen)]">
+              Contact
+            </Link>
+            <Link href="/form" onClick={closeMenu} className="text-lg font-medium text-[var(--color-evergreen)]">
+              Form
+            </Link>
           </nav>
           <div className="h-[1px] w-full bg-gray-200" />
           <div className="flex flex-col gap-4 text-center items-center">
-            <Button size="lg" className="w-full bg-[var(--color-tiger-orange)] text-white hover:bg-[var(--color-tiger-orange)]/90 hover:opacity-100" onClick={closeMenu}>
-              Apply for funding
-            </Button>
+            <Link href="/apply" className="w-full" onClick={closeMenu}>
+              <Button size="lg" className="w-full bg-[var(--color-tiger-orange)] text-white hover:bg-[var(--color-tiger-orange)]/90 hover:opacity-100">
+                Apply for funding
+              </Button>
+            </Link>
           </div>
         </div>
       )}

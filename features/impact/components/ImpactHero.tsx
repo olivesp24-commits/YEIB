@@ -13,7 +13,7 @@ export function ImpactHero() {
       <div className="w-full md:w-1/2 flex items-center justify-center p-8 md:p-16 lg:p-24 relative z-10">
         <div className="max-w-xl w-full mt-20 md:mt-0">
           <FadeIn direction="up">
-            <div className="inline-block px-4 py-1.5 rounded-full bg-white text-[var(--color-evergreen)] text-xs font-bold tracking-widest uppercase mb-8">
+            <div className="inline-block px-4 py-1.5 rounded-full bg-[var(--color-tiger-orange)] text-white text-xs font-bold tracking-widest uppercase mb-8">
               Impact
             </div>
             
