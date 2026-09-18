@@ -18,7 +18,10 @@ export function InquiryForm() {
           </div>
 
           <div className="bg-white rounded-2xl p-8 md:p-12 shadow-sm border border-[var(--color-evergreen)]/10">
-            <form className="flex flex-col gap-6" onSubmit={(e) => e.preventDefault()}>
+            <form className="flex flex-col gap-6" onSubmit={(e) => {
+              e.preventDefault();
+              alert("Your inquiry has been successfully submitted! We will be in touch shortly.");
+            }}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="flex flex-col gap-2">
                   <label htmlFor="firstName" className="font-semibold text-sm">First Name</label>

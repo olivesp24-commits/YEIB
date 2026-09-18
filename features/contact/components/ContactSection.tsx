@@ -96,7 +96,10 @@ export function ContactSection() {
                   Use the form below to initiate a partnership discussion. 
                 </p>
                 
-                <form className="flex flex-col gap-6" onSubmit={(e) => e.preventDefault()}>
+                <form className="flex flex-col gap-6" onSubmit={(e) => {
+                  e.preventDefault();
+                  alert("Your message has been successfully submitted! We will be in touch shortly.");
+                }}>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="flex flex-col gap-2">
                       <label htmlFor="partnerName" className="font-bold text-sm">Full Name</label>

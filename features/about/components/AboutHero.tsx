@@ -1,6 +1,7 @@
 import { FadeIn } from "@/components/ui/FadeIn";
 import { Button } from "@/components/ui/Button";
 import Image from "next/image";
+import Link from "next/link";
 
 export function AboutHero() {
   return (
@@ -33,12 +34,16 @@ export function AboutHero() {
             </p>
             
             <div className="flex flex-col sm:flex-row justify-center md:justify-start items-center gap-4">
-              <Button size="lg" className="w-full sm:w-auto bg-[var(--color-tiger-orange)] text-white hover:bg-[var(--color-tiger-orange)]/90 hover:opacity-100 border border-[var(--color-tiger-orange)]">
-                Apply for funding
-              </Button>
-              <Button size="lg" variant="secondary" className="w-full sm:w-auto bg-transparent text-white border-white hover:bg-white/10">
-                Read our approach
-              </Button>
+              <Link href="/apply" className="w-full sm:w-auto">
+                <Button size="lg" className="w-full sm:w-auto bg-[var(--color-tiger-orange)] text-white hover:bg-[var(--color-tiger-orange)]/90 hover:opacity-100 border border-[var(--color-tiger-orange)]">
+                  Apply for funding
+                </Button>
+              </Link>
+              <Link href="/contact" className="w-full sm:w-auto">
+                <Button size="lg" variant="secondary" className="w-full sm:w-auto bg-transparent text-white border-white hover:bg-white/10">
+                  Partner with YEIB
+                </Button>
+              </Link>
             </div>
           </FadeIn>
         </div>

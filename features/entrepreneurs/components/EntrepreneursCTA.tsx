@@ -25,7 +25,7 @@ export function EntrepreneursCTA() {
           Submit your application and our advisory team will match you with the right capital structure and support pathway.
         </p>
         
-        <Link href="/contact">
+        <Link href="/apply">
           <Button size="lg" className="bg-[var(--color-tiger-orange)] text-white hover:bg-[var(--color-tiger-orange)]/90 hover:opacity-100 border-none shadow-lg px-12">
             Apply for Funding
           </Button>

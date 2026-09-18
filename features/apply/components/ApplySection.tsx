@@ -103,7 +103,10 @@ export function ApplySection() {
                   Please fill out all required fields accurately. This helps us route your application to the correct funding track.
                 </p>
                 
-                <form className="flex flex-col gap-6" onSubmit={(e) => e.preventDefault()}>
+                <form className="flex flex-col gap-6" onSubmit={(e) => {
+                  e.preventDefault();
+                  alert("Your application has been successfully submitted! We will be in touch shortly.");
+                }}>
                   {/* Founder Details */}
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="flex flex-col gap-2">

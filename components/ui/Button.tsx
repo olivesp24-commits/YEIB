@@ -10,9 +10,9 @@ export interface ButtonProps
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant = "primary", size = "default", ...props }, ref) => {
     const variants = {
-      primary: "bg-[var(--color-evergreen)] text-[var(--color-mint-cream)] transition-all duration-300 hover:opacity-90 hover:-translate-y-0.5 hover:shadow-md",
-      secondary: "border-2 border-[var(--color-evergreen)] text-[var(--color-evergreen)] transition-all duration-300 hover:bg-[var(--color-evergreen)] hover:text-[var(--color-mint-cream)] hover:-translate-y-0.5 hover:shadow-md",
-      link: "text-[var(--color-mint-leaf)] transition-all duration-300 underline-offset-4 hover:underline",
+      primary: "bg-[var(--color-evergreen)] text-[var(--color-mint-cream)]",
+      secondary: "border-2 border-[var(--color-evergreen)] text-[var(--color-evergreen)] hover:bg-[var(--color-evergreen)] hover:text-[var(--color-mint-cream)]",
+      link: "text-[var(--color-mint-leaf)] hover:underline hover:shadow-none hover:-translate-y-0 active:scale-100",
     };
 
     const sizes = {
@@ -28,7 +28,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       <button
         ref={ref}
         className={cn(
-          "inline-flex items-center justify-center rounded-full font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-[var(--background)]",
+          "inline-flex items-center justify-center rounded-full font-semibold transition-all duration-300 hover:-translate-y-1 hover:shadow-lg active:scale-95 active:translate-y-0 active:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-tiger-orange)] focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-white",
           variants[variant],
           sizeClass,
           className

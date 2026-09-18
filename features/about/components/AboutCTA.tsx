@@ -22,7 +22,7 @@ export function AboutCTA() {
           Ready to build the case for your business?
         </h2>
         
-        <Link href="/entrepreneurs">
+        <Link href="/apply">
           <Button size="lg" className="bg-[var(--color-tiger-orange)] text-white hover:bg-[var(--color-tiger-orange)]/90 hover:opacity-100 border-none shadow-lg px-12">
             Apply for Funding
           </Button>
