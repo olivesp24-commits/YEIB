@@ -4,13 +4,17 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/Button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown, ChevronUp } from "lucide-react";
 
 export function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isContactOpen, setIsContactOpen] = useState(false);
 
   const toggleMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
-  const closeMenu = () => setIsMobileMenuOpen(false);
+  const closeMenu = () => {
+    setIsMobileMenuOpen(false);
+    setIsContactOpen(false);
+  };
 
   return (
     <header className="fixed top-4 md:top-6 left-1/2 -translate-x-1/2 z-50 w-[calc(100%-1rem)] sm:w-[calc(100%-2rem)] max-w-6xl">
@@ -93,30 +97,43 @@ export function Navbar() {
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
         <div className="absolute top-full left-0 w-full mt-2 bg-white/95 backdrop-blur-xl rounded-2xl shadow-lg border border-gray-100 p-6 flex flex-col gap-6 lg:hidden origin-top animate-in fade-in slide-in-from-top-4">
-          <nav className="flex flex-col gap-4 text-center">
-            <Link href="/about" onClick={closeMenu} className="text-lg font-semibold text-[var(--color-evergreen)]">
+          <nav className="flex flex-col">
+            <Link href="/about" onClick={closeMenu} className="flex items-center justify-between py-4 border-b border-gray-100 text-lg font-semibold text-[var(--color-evergreen)]">
               What We Do
             </Link>
-            <Link href="/entrepreneurs" onClick={closeMenu} className="text-lg font-semibold text-[var(--color-evergreen)]">
+            <Link href="/entrepreneurs" onClick={closeMenu} className="flex items-center justify-between py-4 border-b border-gray-100 text-lg font-semibold text-[var(--color-evergreen)]">
               Who We Serve
             </Link>
-            <Link href="/impact" onClick={closeMenu} className="text-lg font-semibold text-[var(--color-evergreen)]">
+            <Link href="/impact" onClick={closeMenu} className="flex items-center justify-between py-4 border-b border-gray-100 text-lg font-semibold text-[var(--color-evergreen)]">
               Impact
             </Link>
-            <Link href="/investors" onClick={closeMenu} className="text-lg font-semibold text-[var(--color-evergreen)]">
+            <Link href="/investors" onClick={closeMenu} className="flex items-center justify-between py-4 border-b border-gray-100 text-lg font-semibold text-[var(--color-evergreen)]">
               Partners
             </Link>
-            <Link href="/esg" onClick={closeMenu} className="text-lg font-semibold text-[var(--color-evergreen)]">
+            <Link href="/esg" onClick={closeMenu} className="flex items-center justify-between py-4 border-b border-gray-100 text-lg font-semibold text-[var(--color-evergreen)]">
               ESG
             </Link>
-            <div className="flex flex-col gap-3 pt-4 mt-2 border-t border-gray-100">
-              <span className="text-xs font-bold text-[var(--color-evergreen)]/50 uppercase tracking-widest">Contact Us</span>
-              <Link href="/form" onClick={closeMenu} className="text-lg font-semibold text-[var(--color-evergreen)]">
-                General Inquiry
-              </Link>
-              <Link href="/contact" onClick={closeMenu} className="text-lg font-semibold text-[var(--color-evergreen)]">
-                Institutional Partnership
-              </Link>
+            
+            {/* Contact Accordion */}
+            <div className="flex flex-col border-b border-gray-100">
+              <button 
+                onClick={() => setIsContactOpen(!isContactOpen)}
+                className="flex items-center justify-between py-4 text-lg font-semibold text-[var(--color-evergreen)] w-full text-left"
+              >
+                Contact Us
+                {isContactOpen ? <ChevronUp size={20} className="text-[var(--color-evergreen)]" /> : <ChevronDown size={20} className="text-[var(--color-evergreen)]" />}
+              </button>
+              
+              {isContactOpen && (
+                <div className="flex flex-col gap-4 pb-4 pl-4 animate-in fade-in slide-in-from-top-2">
+                  <Link href="/form" onClick={closeMenu} className="text-base text-[var(--color-evergreen)]/80 hover:text-[var(--color-tiger-orange)]">
+                    General Inquiry
+                  </Link>
+                  <Link href="/contact" onClick={closeMenu} className="text-base text-[var(--color-evergreen)]/80 hover:text-[var(--color-tiger-orange)]">
+                    Institutional Partnership
+                  </Link>
+                </div>
+              )}
             </div>
           </nav>
           <div className="h-[1px] w-full bg-gray-200" />
