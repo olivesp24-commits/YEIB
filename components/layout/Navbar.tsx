@@ -29,28 +29,46 @@ export function Navbar() {
         </Link>
         
         {/* Desktop Nav */}
-        <nav className="hidden lg:flex gap-6">
+        <nav className="hidden lg:flex items-center gap-6">
           <Link href="/about" className="text-sm font-semibold text-[var(--color-evergreen)] hover:text-[var(--color-mint-leaf)] transition-colors">
             What We Do
           </Link>
           <Link href="/entrepreneurs" className="text-sm font-semibold text-[var(--color-evergreen)] hover:text-[var(--color-mint-leaf)] transition-colors">
             Who We Serve
           </Link>
-          <Link href="/impact" className="text-sm font-medium text-[var(--color-evergreen)] hover:text-[var(--color-mint-leaf)] transition-colors">
+          <Link href="/impact" className="text-sm font-semibold text-[var(--color-evergreen)] hover:text-[var(--color-mint-leaf)] transition-colors">
             Impact
           </Link>
-          <Link href="/investors" className="text-sm font-medium text-[var(--color-evergreen)] hover:text-[var(--color-mint-leaf)] transition-colors">
+          <Link href="/investors" className="text-sm font-semibold text-[var(--color-evergreen)] hover:text-[var(--color-mint-leaf)] transition-colors">
             Partners
           </Link>
-          <Link href="/esg" className="text-sm font-medium text-[var(--color-evergreen)] hover:text-[var(--color-mint-leaf)] transition-colors">
+          <Link href="/esg" className="text-sm font-semibold text-[var(--color-evergreen)] hover:text-[var(--color-mint-leaf)] transition-colors">
             ESG
           </Link>
-          <Link href="/contact" className="text-sm font-medium text-[var(--color-evergreen)] hover:text-[var(--color-mint-leaf)] transition-colors">
-            Contact
-          </Link>
-          <Link href="/form" className="text-sm font-medium text-[var(--color-evergreen)] hover:text-[var(--color-mint-leaf)] transition-colors">
-            Form
-          </Link>
+          <div className="relative group">
+            <button className="text-sm font-semibold text-[var(--color-evergreen)] group-hover:text-[var(--color-mint-leaf)] transition-colors">
+              Contact Us
+            </button>
+            
+            {/* Dropdown Menu */}
+            <div className="absolute top-full right-0 pt-4 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 z-50">
+              <div className="bg-white rounded-2xl shadow-[0_12px_40px_rgb(0,0,0,0.12)] border border-gray-100 p-2 w-[340px] flex flex-col">
+                <Link href="/form" className="p-4 rounded-xl hover:bg-[var(--color-mint-cream)] transition-colors group/link text-left">
+                  <h3 className="font-bold text-[var(--color-evergreen)] text-lg mb-1 group-hover/link:text-[var(--color-tiger-orange)] transition-colors">General Inquiry</h3>
+                  <p className="text-[var(--color-evergreen)]/70 text-sm leading-relaxed">
+                    Have a question? Send us a message and our team will get back to you.
+                  </p>
+                </Link>
+                
+                <Link href="/contact" className="p-4 rounded-xl hover:bg-[var(--color-mint-cream)] transition-colors group/link text-left">
+                  <h3 className="font-bold text-[var(--color-evergreen)] text-lg mb-1 group-hover/link:text-[var(--color-tiger-orange)] transition-colors">Institutional Partnership</h3>
+                  <p className="text-[var(--color-evergreen)]/70 text-sm leading-relaxed">
+                    Explore investment, ESG alignment, and strategic collaboration with YEIB.
+                  </p>
+                </Link>
+              </div>
+            </div>
+          </div>
         </nav>
         
         {/* Desktop Actions */}
@@ -82,21 +100,24 @@ export function Navbar() {
             <Link href="/entrepreneurs" onClick={closeMenu} className="text-lg font-semibold text-[var(--color-evergreen)]">
               Who We Serve
             </Link>
-            <Link href="/impact" onClick={closeMenu} className="text-lg font-medium text-[var(--color-evergreen)]">
+            <Link href="/impact" onClick={closeMenu} className="text-lg font-semibold text-[var(--color-evergreen)]">
               Impact
             </Link>
-            <Link href="/investors" onClick={closeMenu} className="text-lg font-medium text-[var(--color-evergreen)]">
+            <Link href="/investors" onClick={closeMenu} className="text-lg font-semibold text-[var(--color-evergreen)]">
               Partners
             </Link>
-            <Link href="/esg" onClick={closeMenu} className="text-lg font-medium text-[var(--color-evergreen)]">
+            <Link href="/esg" onClick={closeMenu} className="text-lg font-semibold text-[var(--color-evergreen)]">
               ESG
             </Link>
-            <Link href="/contact" onClick={closeMenu} className="text-lg font-medium text-[var(--color-evergreen)]">
-              Contact
-            </Link>
-            <Link href="/form" onClick={closeMenu} className="text-lg font-medium text-[var(--color-evergreen)]">
-              Form
-            </Link>
+            <div className="flex flex-col gap-3 pt-4 mt-2 border-t border-gray-100">
+              <span className="text-xs font-bold text-[var(--color-evergreen)]/50 uppercase tracking-widest">Contact Us</span>
+              <Link href="/form" onClick={closeMenu} className="text-lg font-semibold text-[var(--color-evergreen)]">
+                General Inquiry
+              </Link>
+              <Link href="/contact" onClick={closeMenu} className="text-lg font-semibold text-[var(--color-evergreen)]">
+                Institutional Partnership
+              </Link>
+            </div>
           </nav>
           <div className="h-[1px] w-full bg-gray-200" />
           <div className="flex flex-col gap-4 text-center items-center">
