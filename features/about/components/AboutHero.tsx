@@ -24,13 +24,13 @@ export function AboutHero() {
         <div className="max-w-xl mt-20 md:mt-0">
           <FadeIn direction="up">
             <h1 className="mb-6 font-[var(--font-asul)] text-4xl lg:text-5xl leading-[1.15] font-bold text-white drop-shadow-sm">
-              We exist to dismantle <br />
-              the barriers standing <br />
-              between young founders <br />
-              and their potential.
+              We Exist to Dismantle <br />
+              the Barriers Standing <br />
+              Between Young Founders <br />
+              and Their Potential.
             </h1>
             <p className="text-lg md:text-xl text-white/90 leading-relaxed max-w-lg font-medium mx-auto md:mx-0 mb-10">
-              A specialized development bank built to provide the capital, advisory, and ecosystem infrastructure necessary for Nigerian MSMEs to scale globally.
+              A government-enabled, private sector-led investment fund providing the financial and non-financial support Nigerian youth-owned MSMEs need to grow and scale.
             </p>
             
             <div className="flex flex-col sm:flex-row justify-center md:justify-start items-center gap-4">

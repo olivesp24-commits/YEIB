@@ -4,6 +4,9 @@ import { RiskBanksWont } from "@/features/entrepreneurs/components/RiskBanksWont
 import { CapitalAlone } from "@/features/entrepreneurs/components/CapitalAlone";
 import { EntrepreneursPartners } from "@/features/entrepreneurs/components/EntrepreneursPartners";
 import { BusinessStageMatrix } from "@/features/entrepreneurs/components/BusinessStageMatrix";
+import { TicketSizes } from "@/features/entrepreneurs/components/TicketSizes";
+import { Challenges } from "@/features/entrepreneurs/components/Challenges";
+import { SectorOpportunity } from "@/features/entrepreneurs/components/SectorOpportunity";
 import { ClosingCTA } from "@/features/home/components/ClosingCTA";
 
 export default function EntrepreneursPage() {
@@ -13,6 +16,9 @@ export default function EntrepreneursPage() {
       <GrowthCapital />
       <RiskBanksWont />
       <CapitalAlone />
+      <TicketSizes />
+      <Challenges />
+      <SectorOpportunity />
       <EntrepreneursPartners />
       <BusinessStageMatrix />
       <ClosingCTA />

@@ -30,7 +30,7 @@ export function Footer() {
           </div>
           
           <div>
-            <h4 className="text-white font-semibold mb-6 tracking-wide uppercase text-sm">Platform</h4>
+            <h4 className="text-white font-semibold mb-6 tracking-wide capitalize text-sm">Platform</h4>
             <ul className="space-y-4">
               <li><Link href="/about" className="hover:text-white transition-colors">What We Do</Link></li>
               <li><Link href="/entrepreneurs" className="hover:text-white transition-colors">Who We Serve</Link></li>
@@ -40,7 +40,7 @@ export function Footer() {
           </div>
           
           <div>
-            <h4 className="text-white font-semibold mb-6 tracking-wide uppercase text-sm">Legal & Connect</h4>
+            <h4 className="text-white font-semibold mb-6 tracking-wide capitalize text-sm">Legal & Connect</h4>
             <ul className="space-y-4">
               <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Terms of Service</a></li>
@@ -51,8 +51,8 @@ export function Footer() {
         </div>
         
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-white/60">
-          <p>&copy; {currentYear} Youth Entrepreneurship Investment Bank. All rights reserved.</p>
-          <p className="mt-4 md:mt-0">Anchored by the African Development Bank</p>
+          <p>&copy; {currentYear} N-YEIB Investment Funds. All rights reserved.</p>
+          <p className="mt-4 md:mt-0">Anchored by AfDB</p>
         </div>
       </div>
     </footer>

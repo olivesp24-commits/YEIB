@@ -3,11 +3,15 @@ import { TheChallenge } from "@/features/about/components/TheChallenge";
 import { OurApproach } from "@/features/about/components/OurApproach";
 import { AllySection } from "@/features/about/components/AllySection";
 import { TransparencyFramework } from "@/features/about/components/TransparencyFramework";
+import { Governance } from "@/features/about/components/Governance";
+import { SweetSpot } from "@/features/about/components/SweetSpot";
+import { EcosystemVehicles } from "@/features/about/components/EcosystemVehicles";
+import { StructureDiagram } from "@/features/about/components/StructureDiagram";
 import { ClosingCTA } from "@/features/home/components/ClosingCTA";
 
 export const metadata = {
   title: 'About Us | YEIB',
-  description: 'Learn about the Youth Entrepreneurship Investment Bank (YEIB) and our mission to bridge the capital gap for young Nigerian founders.',
+  description: 'Learn about the N-YEIB Investment Funds (YEIB) and our mission to bridge the capital gap for young Nigerian founders.',
 };
 
 export default function AboutPage() {
@@ -16,7 +20,10 @@ export default function AboutPage() {
       <AboutHero />
       <TheChallenge />
       <OurApproach />
-      <AllySection />
+      <SweetSpot />
+      <Governance />
+      <StructureDiagram />
+      <EcosystemVehicles />
       <TransparencyFramework />
       <ClosingCTA />
     </div>

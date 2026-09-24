@@ -11,14 +11,14 @@ export function ContactSection() {
       <div className="container mx-auto px-4 max-w-6xl">
         <FadeIn direction="up">
           <div className="mb-16">
-            <div className="inline-block px-4 py-1.5 rounded-full border border-[var(--color-tiger-orange)] text-[var(--color-tiger-orange)] text-xs font-bold tracking-widest uppercase mb-6">
+            <div className="inline-block px-4 py-1.5 rounded-full border border-[var(--color-tiger-orange)] text-[var(--color-tiger-orange)] text-xs font-bold tracking-widest capitalize mb-6">
               Get in Touch
             </div>
-            <h1 className="font-[var(--font-asul)] text-4xl md:text-6xl font-bold mb-6 uppercase tracking-tight">
+            <h1 className="font-[var(--font-asul)] text-4xl md:text-6xl font-bold mb-6 capitalize tracking-tight">
               Contact <span className="text-[var(--color-tiger-orange)]">Us</span>.
             </h1>
             <p className="text-xl md:text-2xl text-[var(--color-evergreen)]/80 max-w-2xl font-medium">
-              We are actively exploring partnerships with DFIs, commercial banks, and enterprise support organizations.
+              We are actively exploring partnerships with DFIs, commercial lenders, and enterprise support organizations.
             </p>
           </div>
         </FadeIn>
@@ -139,7 +139,7 @@ export function ContactSection() {
                     >
                       <option value="">Select an option</option>
                       <option value="dfi">Development Finance Institution (DFI)</option>
-                      <option value="bank">Commercial / Microfinance Bank</option>
+                      <option value="lender">Commercial Lender / Microfinance Institution</option>
                       <option value="eso">Enterprise Support Organization (ESO)</option>
                       <option value="fund">PE / VC Fund</option>
                       <option value="other">Other</option>

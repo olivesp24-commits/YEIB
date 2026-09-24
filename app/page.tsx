@@ -14,7 +14,7 @@ export default function Home() {
       <FounderCarousel />
       <EligibilitySection />
       
-      <section className="relative w-full h-[30vh] sm:h-[40vh] md:h-[50vh] min-h-[300px]">
+      <section className="w-full h-[50vh] md:h-[70vh] relative overflow-hidden">
         <Image 
           src="/asset/section-image.png" 
           alt="YEIB Office and Environment" 

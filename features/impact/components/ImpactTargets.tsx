@@ -7,12 +7,12 @@ import { AnimatedStats } from "@/features/home/components/AnimatedStats";
 export function ImpactTargets() {
   const targets = [
     {
-      number: "4,000+",
+      number: "~1.6M",
       label: "Direct and Indirect Jobs",
       desc: "To be unlocked and created through strategic capital deployment and ecosystem partnerships.",
     },
     {
-      number: "200+",
+      number: "118",
       label: "ESOs Mobilised",
       desc: "Enterprise Support Organizations directly funded and capacitated to incubate, accelerate, and support founders.",
     },
@@ -22,7 +22,7 @@ export function ImpactTargets() {
       desc: "On track to reach 50% representation across all funding distribution and ecosystem engagement by year 5.",
     },
     {
-      number: "10,000+",
+      number: "~38,400",
       label: "Businesses Supported",
       desc: "Youth and women-led enterprises empowered to overcome capital and ecosystem barriers to scale.",
     }
@@ -47,7 +47,7 @@ export function ImpactTargets() {
                 hidden: { opacity: 0, scale: 0.9 },
                 visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } }
               }}
-              className="inline-block px-4 py-1.5 rounded-full border border-[var(--color-tiger-orange)] text-[var(--color-tiger-orange)] text-xs font-bold tracking-widest uppercase mb-8 md:mb-12"
+              className="inline-block px-4 py-1.5 rounded-full border border-[var(--color-tiger-orange)] text-[var(--color-tiger-orange)] text-xs font-bold tracking-widest capitalize mb-8 md:mb-12"
             >
               20-Year Targets
             </motion.div>
@@ -58,10 +58,10 @@ export function ImpactTargets() {
                   hidden: { y: "100%", opacity: 0 },
                   visible: { y: 0, opacity: 1, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }
                 }}
-                className="font-[var(--font-asul)] text-4xl md:text-6xl font-bold tracking-tight uppercase"
+                className="font-[var(--font-asul)] text-4xl md:text-6xl font-bold tracking-tight capitalize"
               >
-                THE NUMBERS <br />
-                THAT <span className="text-[var(--color-tiger-orange)]">MATTER.</span>
+                The Numbers <br />
+                That <span className="text-[var(--color-tiger-orange)]">Matter.</span>
               </motion.h2>
             </div>
           </div>
@@ -101,15 +101,13 @@ export function ImpactTargets() {
               className={`p-8 md:p-16 border-b border-[var(--color-evergreen)]/20 ${index % 2 === 0 ? 'md:border-r' : ''}`}
             >
               <div className="font-[var(--font-asul)] text-[80px] sm:text-[100px] md:text-[120px] leading-[0.9] font-bold text-[var(--color-evergreen)] mb-12 tracking-tighter">
-                {target.number.includes('+') ? (
-                  <>
-                    <CountUp text={target.number.replace('+', '')} />+
-                  </>
+                {target.number !== "Year 5" ? (
+                  <CountUp text={target.number} />
                 ) : (
                   target.number
                 )}
               </div>
-              <h3 className="font-bold text-2xl md:text-3xl uppercase mb-4 tracking-tight">
+              <h3 className="font-bold text-2xl md:text-3xl capitalize mb-4 tracking-tight">
                 {target.label}
               </h3>
               <p className="text-xl text-[var(--color-evergreen)]/70 leading-relaxed font-medium max-w-sm">

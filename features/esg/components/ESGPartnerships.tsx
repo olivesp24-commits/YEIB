@@ -13,32 +13,32 @@ export function ESGPartnerships() {
     { 
       src: "/partner-logo/dbn-logo.png", 
       alt: "DBN", 
-      name: "Development Bank of Nigeria",
+      name: "DBN",
       desc: "Co-investing to de-risk green sectors and promote financial inclusion across the MSME landscape." 
-    },
-    { 
-      src: "/partner-logo/afdb-logo.png", 
-      alt: "AfDB", 
-      name: "African Development Bank",
-      desc: "Providing technical assistance to align our portfolio with continental development and climate resilience goals." 
-    },
-    { 
-      src: "/partner-logo/un-women-logo.png", 
-      alt: "UN Women", 
-      name: "UN Women",
-      desc: "Guiding our gender-parity mandate to ensure women-led enterprises receive equitable access to growth capital." 
-    },
-    { 
-      src: "/partner-logo/cbn-logo.png", 
-      alt: "CBN", 
-      name: "Central Bank of Nigeria",
-      desc: "Providing regulatory oversight and macroeconomic stability frameworks to anchor the Fund's operations." 
     },
     { 
       src: "/partner-logo/coat-of-arm-logo.png", 
       alt: "Ministry of Finance", 
       name: "Ministry of Finance",
       desc: "Ensuring alignment with national economic development policies and fostering a supportive regulatory environment." 
+    },
+    { 
+      src: "/partner-logo/afdb-logo.png", 
+      alt: "AfDB", 
+      name: "AfDB",
+      desc: "Providing technical assistance to align our portfolio with continental development and climate resilience goals." 
+    },
+    { 
+      src: "/partner-logo/sec-logo.png", 
+      alt: "SEC", 
+      name: "Securities and Exchange Commission",
+      desc: "Providing regulatory oversight and compliance frameworks to anchor the Fund's operations." 
+    },
+    { 
+      src: "/partner-logo/mofi-logo.png", 
+      alt: "MOFI", 
+      name: "MOFI",
+      desc: "Managing federal government investments and ensuring alignment with national development goals." 
     }
   ];
 
@@ -46,7 +46,7 @@ export function ESGPartnerships() {
     <section className="py-24 md:py-32 bg-[var(--color-evergreen)] text-white">
       <div className="container mx-auto px-4 max-w-6xl">
         <FadeIn direction="up">
-          <div className="inline-block px-4 py-1.5 rounded-full border border-white/30 text-white text-xs font-bold tracking-widest uppercase mb-6 bg-white/5">
+          <div className="inline-block px-4 py-1.5 rounded-full border border-white/30 text-white text-xs font-bold tracking-widest capitalize mb-6 bg-white/5">
             Partnerships
           </div>
           

@@ -8,10 +8,10 @@ export function TransparencyFramework() {
   const partners = [
     { src: "/partner-logo/nsia-logo.png", alt: "NSIA", width: 90 },
     { src: "/partner-logo/dbn-logo.png", alt: "DBN", width: 90 },
-    { src: "/partner-logo/cbn-logo.png", alt: "CBN", width: 50 },
-    { src: "/partner-logo/afdb-logo.png", alt: "AfDB", width: 90 },
     { src: "/partner-logo/coat-of-arm-logo.png", alt: "Coat of Arms", width: 50 },
-    { src: "/partner-logo/un-women-logo.png", alt: "UN Women", width: 110 },
+    { src: "/partner-logo/afdb-logo.png", alt: "AfDB", width: 90 },
+    { src: "/partner-logo/sec-logo.png", alt: "SEC", width: 50 },
+    { src: "/partner-logo/mofi-logo.png", alt: "MOFI", width: 110 },
   ];
 
   const usefulLinks = [
@@ -39,8 +39,8 @@ export function TransparencyFramework() {
         {/* Partners Section */}
         <div className="text-center mb-32 border-b border-[var(--color-evergreen)]/10 pb-24">
           <FadeIn direction="up">
-            <span className="text-[var(--color-evergreen)]/50 font-bold tracking-widest text-sm uppercase mb-8 block font-mono">
-              WORKING WITH THE BEST
+            <span className="text-[var(--color-evergreen)]/50 font-bold tracking-widest text-sm capitalize mb-8 block font-mono">
+              Working With the Best
             </span>
             <h2 className="font-[var(--font-asul)] text-3xl md:text-5xl font-bold text-[var(--color-evergreen)] mb-6">
               An institutional framework built on transparency.
@@ -68,8 +68,8 @@ export function TransparencyFramework() {
         {/* Useful Information Section */}
         <div>
           <FadeIn direction="up" className="mb-12">
-            <span className="text-[var(--color-evergreen)]/50 font-bold tracking-widest text-sm uppercase block font-mono">
-              USEFUL INFORMATION
+            <span className="text-[var(--color-evergreen)]/50 font-bold tracking-widest text-sm capitalize block font-mono">
+              Useful Information
             </span>
           </FadeIn>
 

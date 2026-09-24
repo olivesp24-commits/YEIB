@@ -11,16 +11,16 @@ export function CapitalAlone() {
 
   const services = [
     {
-      title: "TECHNICAL CAPACITY BUILDING",
+      title: "Technical Capacity Building",
       desc: "In-depth operational training, financial literacy programs, and management structuring to ensure your business is built on a solid foundation."
     },
     {
-      title: "SPECIALIZED ADVISORY SERVICES",
+      title: "Specialized Advisory Services",
       desc: "Access to industry experts who provide tactical guidance on scaling, market entry, regulatory compliance, and product development."
     },
     {
-      title: "INVESTOR READINESS SUPPORT",
-      desc: "Strategic preparation to help you secure subsequent rounds of funding from institutional investors, DFIs, and commercial banks."
+      title: "Investor Readiness Support",
+      desc: "Strategic preparation to help you secure subsequent rounds of funding from institutional investors, DFIs, and commercial lenders."
     }
   ];
 
@@ -33,7 +33,7 @@ export function CapitalAlone() {
       <div className="container mx-auto px-4 max-w-7xl">
         <div className="flex flex-col md:flex-row justify-between mb-16 md:mb-24 gap-8">
           <div className="md:w-1/4">
-            <h3 className="font-bold tracking-widest text-xs uppercase text-[var(--color-tiger-orange)] mb-4">
+            <h3 className="font-bold tracking-widest text-xs capitalize text-[var(--color-tiger-orange)] mb-4">
               Services
             </h3>
           </div>
@@ -53,11 +53,11 @@ export function CapitalAlone() {
                   hidden: { y: "100%", opacity: 0 },
                   visible: { y: 0, opacity: 1, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }
                 }}
-                className="font-[var(--font-asul)] text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight uppercase leading-[1.1]"
+                className="font-[var(--font-asul)] text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight capitalize leading-[1.1]"
               >
-                WITH ECOSYSTEM SUPPORT <br className="hidden md:block" />
-                AND OVERALL CAPACITY <br className="hidden md:block" />
-                IN FOCUS
+                With Ecosystem Support <br className="hidden md:block" />
+                And Overall Capacity <br className="hidden md:block" />
+                In Focus
               </motion.h2>
             </motion.div>
           </div>
@@ -77,7 +77,7 @@ export function CapitalAlone() {
                 onClick={() => toggleAccordion(index)}
                 className="w-full py-8 md:py-12 flex justify-between items-center text-left hover:bg-[var(--color-mint-cream)] transition-colors px-4 -mx-4 group"
               >
-                <h3 className="font-[var(--font-asul)] text-2xl md:text-4xl lg:text-5xl font-bold uppercase transition-transform duration-300 group-hover:translate-x-2">
+                <h3 className="font-[var(--font-asul)] text-2xl md:text-4xl lg:text-5xl font-bold capitalize transition-transform duration-300 group-hover:translate-x-2">
                   {service.title}
                 </h3>
                 <div className="flex-shrink-0 ml-8 text-[var(--color-evergreen)]">

@@ -9,20 +9,38 @@ import { Briefcase, ShieldCheck, Users } from "lucide-react";
 export function OurApproach() {
   const approaches = [
     {
-      title: "Equity Investment Fund",
-      desc: "Direct patient capital investments into high-growth, high-impact youth and women-led enterprises to accelerate their expansion and market reach.",
+      title: "Equity Investment Fund (65% of AUM)",
+      desc: (
+        <div className="space-y-3">
+          <p><strong>Products:</strong> Direct equity/quasi-equity into high-growth youth ventures, capital for local VC/PE firms, and first-loss capital.</p>
+          <p><strong>Rationale:</strong> Provides patient, early-stage capital and tailor-made financing to catalyze growth across sectors.</p>
+          <p><strong>Revenue Stream:</strong> Capital gains, interest earnings, and profit.</p>
+        </div>
+      ),
       icon: <Briefcase className="w-12 h-12 text-[var(--color-tiger-orange)]" />,
       color: "bg-[var(--color-tiger-orange)]"
     },
     {
-      title: "Credit Guarantee Fund",
-      desc: "De-risking lending by partnering with commercial banks and financial institutions to unlock affordable debt financing for qualified MSMEs.",
+      title: "Credit Guarantee Fund (25% of AUM)",
+      desc: (
+        <div className="space-y-3">
+          <p><strong>Products:</strong> First loss credit guarantees to commercial lenders and MFIs, up to 75% coverage.</p>
+          <p><strong>Rationale:</strong> Unlocks additional capital by addressing the systemic bottleneck of lack of collateral.</p>
+          <p><strong>Revenue Stream:</strong> Guarantee fees.</p>
+        </div>
+      ),
       icon: <ShieldCheck className="w-12 h-12 text-[#2E86AB]" />,
       color: "bg-[#2E86AB]"
     },
     {
-      title: "Ecosystem Development",
-      desc: "Comprehensive capacity building, technical assistance, mentorship, and policy advocacy to create a thriving environment for entrepreneurship.",
+      title: "Ecosystem Development Fund (10% of AUM)",
+      desc: (
+        <div className="space-y-3">
+          <p><strong>Products:</strong> Grants to ESOs, BDS providers, and reimbursable grants to MSMEs.</p>
+          <p><strong>Rationale:</strong> Addresses ecosystem challenges, provides catalytic capital, and increases the number of investment-ready MSMEs.</p>
+          <p><strong>Revenue Stream:</strong> Grant principal returned (for reimbursable grants), otherwise no financial return.</p>
+        </div>
+      ),
       icon: <Users className="w-12 h-12 text-[var(--color-mint-leaf)]" />,
       color: "bg-[var(--color-mint-leaf)]"
     }
@@ -59,7 +77,7 @@ export function OurApproach() {
     <section className="py-24 bg-[var(--color-mint-cream)] relative" ref={containerRef}>
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="mb-16">
-          <Tag variant="soft" className="mb-6 uppercase tracking-widest text-xs border-[var(--color-evergreen)] text-[var(--color-evergreen)]">
+          <Tag variant="soft" className="mb-6 capitalize tracking-widest text-xs border-[var(--color-evergreen)] text-[var(--color-evergreen)]">
             Our Approach
           </Tag>
           <h2 className="font-[var(--font-asul)] text-3xl md:text-5xl font-bold text-[var(--color-evergreen)]">
@@ -82,15 +100,15 @@ export function OurApproach() {
                 <div className={`hidden md:block absolute left-0 top-16 w-6 h-6 rounded-full border-4 border-[var(--color-mint-cream)] z-10 transition-colors duration-500 ${activeIndex === i ? 'bg-[var(--color-tiger-orange)]' : 'bg-[var(--color-evergreen)]/20'}`}></div>
                 
                 <div className="md:pl-12">
-                  <span className="text-sm font-bold text-[var(--color-evergreen)]/50 uppercase tracking-widest mb-2 block">
+                  <span className="text-sm font-bold text-[var(--color-evergreen)]/50 capitalize tracking-widest mb-2 block">
                     Approach 0{i + 1}
                   </span>
                   <h3 className="text-2xl md:text-3xl font-bold text-[var(--color-evergreen)] mb-6 leading-tight">
                     {approach.title}
                   </h3>
-                  <p className="text-lg text-[var(--color-evergreen)]/80 leading-relaxed">
+                  <div className="text-lg text-[var(--color-evergreen)]/80 leading-relaxed">
                     {approach.desc}
-                  </p>
+                  </div>
                 </div>
               </div>
             ))}

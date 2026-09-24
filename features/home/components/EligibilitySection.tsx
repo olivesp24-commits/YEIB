@@ -7,20 +7,21 @@ import { UserIcon, UsersIcon, BuildingIcon, TargetIcon } from "lucide-react";
 export function EligibilitySection() {
   const tags = [
     "Agriculture", "Creative Industries", "Trade", "ICT", 
-    "Women-led", "Youth-led", "Climate Resilient", "Digitally Enabled"
+    "Women-led", "Youth-led", "Climate Resilient", "Digitally Enabled",
+    "Inter/Intra-regional Trade"
   ];
   
   const goals = [
-    { value: "312", label: "Businesses backed since inception", status: "IN-PROGRESS · FY2026" },
-    { value: "10 days", label: "Average application review time", status: "IN-PROGRESS · FY2026" },
-    { value: "₦4.2bn", label: "Deployed across youth- and women-led MSMEs", status: "IN-PROGRESS · FY2026" }
+    { value: "$300M", label: "Total capitalisation target", status: "" },
+    { value: "$100M", label: "AfDB sovereign loan", status: "" },
+    { value: "3", label: "Financing instruments", status: "" }
   ];
   
   const eligibilityCards = [
-    { icon: <UserIcon size={20} />, title: "Youth-Led", desc: "Business owned, managed, or primarily employing people under 35" },
+    { icon: <UserIcon size={20} />, title: "Youth-Led", desc: "Business owned, managed, or primarily employing youth" },
     { icon: <UsersIcon size={20} />, title: "Women-Led", desc: "Businesses with significant women ownership or management" },
     { icon: <BuildingIcon size={20} />, title: "Registered MSME", desc: "Formally registered Nigerian business with verifiable track record" },
-    { icon: <TargetIcon size={20} />, title: "Priority Sectors", desc: "Agriculture, Creative Industries, Trade, and ICT." }
+    { icon: <TargetIcon size={20} />, title: "Future-Proof", desc: "Sector agnostic, prioritizing climate resilient, digitally enabled businesses poised for regional trade." }
   ];
 
   return (
@@ -32,14 +33,14 @@ export function EligibilitySection() {
       
       <div className="container mx-auto px-4 max-w-6xl relative z-10">
         <FadeIn direction="up" className="mb-12">
-          <p className="text-[var(--color-tiger-orange)] font-bold text-sm tracking-wider uppercase mb-4">
+          <p className="text-[var(--color-tiger-orange)] font-bold text-sm tracking-wider capitalize mb-4">
             Eligibility
           </p>
           <h2 className="font-[var(--font-asul)] text-3xl sm:text-4xl md:text-5xl font-bold text-[var(--color-evergreen)] mb-4">
-            Built for founders under <span className="text-[var(--color-tiger-orange)]">35</span>
+            Built for <span className="text-[var(--color-tiger-orange)]">youth-owned</span> MSMEs
           </h2>
           <p className="text-lg text-[var(--color-evergreen)]/80 max-w-2xl mb-8">
-            YEIB Investment Fund is designed for youth-led and women-led micro, small, and medium enterprises across Nigeria.
+            N-YEIB Investment Funds are designed for sector-agnostic youth-led and women-led micro, small, and medium enterprises across Nigeria.
           </p>
           
           <div className="flex flex-wrap gap-3">
@@ -51,6 +52,7 @@ export function EligibilitySection() {
             <Tag variant="soft">Youth-led</Tag>
             <Tag variant="soft">Climate Resilient</Tag>
             <Tag variant="soft">Digitally Enabled</Tag>
+            <Tag variant="soft">Poised for Trade</Tag>
           </div>
         </FadeIn>
 
@@ -58,7 +60,7 @@ export function EligibilitySection() {
           {/* Left Column: Goals */}
           <FadeIn delay={200} direction="up" className="lg:w-1/3">
             <div className="bg-[var(--color-evergreen)] rounded-3xl p-8 md:p-10 text-white shadow-xl flex flex-col justify-between h-full">
-            <h3 className="font-bold text-xs tracking-[0.2em] uppercase text-white/70 mb-12 text-center">
+            <h3 className="font-bold text-xs tracking-[0.2em] capitalize text-white/70 mb-12 text-center">
               Our Goals
             </h3>
             <div className="space-y-8">
@@ -70,10 +72,12 @@ export function EligibilitySection() {
                   <div className="text-white/80 mb-4 text-sm font-medium">
                     {goal.label}
                   </div>
-                  <div className="flex items-center text-xs font-bold tracking-wider text-[var(--color-mint-leaf)] uppercase">
-                    <span className="w-2 h-2 rounded-full bg-[var(--color-mint-leaf)] mr-2"></span>
-                    {goal.status}
-                  </div>
+                  {goal.status && (
+                    <div className="flex items-center text-xs font-bold tracking-wider text-[var(--color-mint-leaf)] capitalize">
+                      <span className="w-2 h-2 rounded-full bg-[var(--color-mint-leaf)] mr-2"></span>
+                      {goal.status}
+                    </div>
+                  )}
                 </div>
               ))}
             </div>

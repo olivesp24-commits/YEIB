@@ -5,10 +5,10 @@ export function EntrepreneursPartners() {
   const partners = [
     { src: "/partner-logo/nsia-logo.png", alt: "NSIA", width: 90 },
     { src: "/partner-logo/dbn-logo.png", alt: "DBN", width: 90 },
-    { src: "/partner-logo/cbn-logo.png", alt: "CBN", width: 50 },
-    { src: "/partner-logo/afdb-logo.png", alt: "AfDB", width: 90 },
     { src: "/partner-logo/coat-of-arm-logo.png", alt: "Coat of Arms", width: 50 },
-    { src: "/partner-logo/un-women-logo.png", alt: "UN Women", width: 110 },
+    { src: "/partner-logo/afdb-logo.png", alt: "AfDB", width: 90 },
+    { src: "/partner-logo/sec-logo.png", alt: "SEC", width: 50 },
+    { src: "/partner-logo/mofi-logo.png", alt: "MOFI", width: 110 },
   ];
 
   return (
@@ -17,7 +17,7 @@ export function EntrepreneursPartners() {
         <FadeIn direction="up">
           <div className="flex flex-col md:flex-row items-center justify-between gap-12">
             <div className="md:w-1/4 text-center md:text-left">
-              <h3 className="font-bold tracking-widest text-xs uppercase text-[var(--color-evergreen)]/50">
+              <h3 className="font-bold tracking-widest text-xs capitalize text-[var(--color-evergreen)]/50">
                 Strategic Partners
               </h3>
             </div>

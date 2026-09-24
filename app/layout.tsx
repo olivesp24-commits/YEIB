@@ -25,7 +25,7 @@ const generalSans = Chivo({
 });
 
 export const metadata: Metadata = {
-  title: "YEIB Investment Fund",
+  title: "N-YEIB Investment Funds",
   description: "Funding the dreams of young people & women.",
 };
 

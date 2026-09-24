@@ -7,12 +7,12 @@ export function OurApproach() {
   const pillars = [
     {
       title: "ESG Principles & Commitments",
-      desc: "N-YIF's overall commitment to responsible investment, environmental and social sustainability, good governance, and development impact.",
+      desc: "YEIB's overall commitment to responsible investment, environmental and social sustainability, good governance, and development impact.",
       icon: <Leaf className="w-8 h-8 text-[var(--color-tiger-orange)]" />
     },
     {
       title: "Governance & Accountability",
-      desc: "Our governance structure for managing ESG matters, including oversight responsibilities and the roles of N-YIF and participating financial institutions.",
+      desc: "Our governance structure for managing ESG matters, including oversight responsibilities and the roles of YEIB and participating financial institutions.",
       icon: <ShieldCheck className="w-8 h-8 text-[var(--color-tiger-orange)]" />
     },
     {

@@ -8,7 +8,7 @@ export function AllySection() {
       <div className="container mx-auto px-4 max-w-4xl relative z-10 flex flex-col items-center text-center">
         <FadeIn direction="up">
           <h2 className="font-[var(--font-asul)] text-6xl sm:text-7xl md:text-8xl lg:text-[100px] font-bold text-white mb-6 tracking-tight">
-            ALLY
+            Ally
           </h2>
           <p className="text-xl md:text-2xl text-white/90 leading-relaxed font-medium">
             We are the institutional partner you need to build successful MSMEs and a brighter economy.

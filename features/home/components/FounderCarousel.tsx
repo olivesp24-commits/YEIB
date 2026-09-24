@@ -82,7 +82,7 @@ export function FounderCarousel() {
     <section className="py-16 md:py-32 bg-white overflow-hidden">
       <div className="container mx-auto px-4">
         <FadeIn direction="up">
-          <p className="text-[var(--color-tiger-orange)] font-bold text-sm tracking-wider uppercase mb-12 ml-4">
+          <p className="text-[var(--color-tiger-orange)] font-bold text-sm tracking-wider capitalize mb-12 ml-4">
             Our Target Audience
           </p>
         </FadeIn>

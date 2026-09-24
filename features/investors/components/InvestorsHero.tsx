@@ -50,7 +50,7 @@ export function InvestorsHero() {
               hidden: { opacity: 0, scale: 0.9 },
               visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } }
             }}
-            className="inline-block px-4 py-1.5 rounded-full border border-[var(--color-tiger-orange)] text-[var(--color-tiger-orange)] text-xs font-bold tracking-widest uppercase mb-12"
+            className="inline-block px-4 py-1.5 rounded-full border border-[var(--color-tiger-orange)] text-[var(--color-tiger-orange)] text-xs font-bold tracking-widest capitalize mb-12"
           >
             For Investors & Partners
           </motion.div>
@@ -63,8 +63,8 @@ export function InvestorsHero() {
               }}
               className="font-[var(--font-asul)] text-5xl sm:text-6xl md:text-7xl lg:text-[100px] leading-[0.95] font-bold text-white tracking-tighter"
             >
-              A $300M THESIS-DRIVEN <br />
-              <span className="text-[var(--color-tiger-orange)]">CAPITAL FUND.</span>
+              A $300M Thesis-Driven <br />
+              <span className="text-[var(--color-tiger-orange)]">Capital Fund.</span>
             </motion.h1>
           </div>
           

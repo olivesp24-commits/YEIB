@@ -11,7 +11,7 @@ export function StatsSection() {
       />
       <div className="container mx-auto px-4 max-w-6xl relative z-10">
         <FadeIn direction="up" className="mb-12">
-          <p className="text-[var(--color-tiger-orange)] font-bold text-sm tracking-wider uppercase mb-4">
+          <p className="text-[var(--color-tiger-orange)] font-bold text-sm tracking-wider capitalize mb-4">
             Goals
           </p>
           <h2 className="font-[var(--font-asul)] text-3xl sm:text-4xl md:text-5xl font-bold text-[var(--color-evergreen)]">
@@ -22,9 +22,9 @@ export function StatsSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <FadeIn delay={200} direction="up" className="h-full">
             <CardStatBlock 
-              value="4,000+" 
+              value="~1.6M" 
               label="Direct and Indirect Jobs" 
-              source="FY2025" 
+              source="20-year target" 
             >
               <div className="mt-4 text-sm text-[var(--color-evergreen)]/70">
                 Successfully created and sustained through strategic SME investments.
@@ -37,9 +37,9 @@ export function StatsSection() {
 
           <FadeIn delay={300} direction="up" className="h-full">
             <CardStatBlock 
-              value="200+" 
+              value="118" 
               label="ESOs Mobilised" 
-              source="FY2025" 
+              source="20-year target" 
             >
               <div className="mt-4 text-sm text-[var(--color-evergreen)]/70">
                 Entrepreneur Support Organisations activated to provide local support.
@@ -54,7 +54,7 @@ export function StatsSection() {
             <CardStatBlock 
               value="Year 5" 
               label="Gender Parity Target" 
-              source="FY2025" 
+              source="20-year target" 
             >
               <div className="mt-4 text-sm text-[var(--color-evergreen)]/70">
                 On track to reach equal male-to-female founder representation.
@@ -67,9 +67,9 @@ export function StatsSection() {
 
           <FadeIn delay={500} direction="up" className="h-full">
             <CardStatBlock 
-              value="10,000+" 
+              value="~38,400" 
               label="Businesses Supported" 
-              source="FY2025" 
+              source="20-year target" 
             >
               <div className="mt-4 text-sm text-[var(--color-evergreen)]/70">
                 Micro, small, and medium enterprises empowered with necessary resources.

@@ -39,9 +39,9 @@ export function FirstLossGuarantee() {
                 hidden: { y: "100%", opacity: 0 },
                 visible: { y: 0, opacity: 1, transition: { duration: 0.9, ease: [0.16, 1, 0.3, 1] } }
               }}
-              className="font-[var(--font-asul)] text-4xl sm:text-5xl md:text-7xl lg:text-[80px] leading-[1.05] font-bold tracking-tighter uppercase"
+              className="font-[var(--font-asul)] text-4xl sm:text-5xl md:text-7xl lg:text-[80px] leading-[1.05] font-bold tracking-tighter capitalize"
             >
-              WE ABSORB UP TO 75% OF THE RISK. YOU KEEP THE RETURNS.
+              We Absorb Up To 75% Of The Risk. You Keep The Returns.
             </motion.h2>
           </div>
         </motion.div>
@@ -56,11 +56,11 @@ export function FirstLossGuarantee() {
           }}
           className="md:w-1/4 pt-4 md:border-l border-[var(--color-mint-cream)]/20 md:pl-12"
         >
-          <div className="text-[var(--color-tiger-orange)] font-bold text-xs tracking-widest uppercase mb-6">
+          <div className="text-[var(--color-tiger-orange)] font-bold text-xs tracking-widest capitalize mb-6">
             The Guarantee
           </div>
           <p className="text-xl md:text-2xl opacity-70 leading-relaxed font-medium">
-            Our First Loss Guarantee mechanism protects up to 75% of your deployed capital. If a youth-led business fails, we absorb the loss—radically shifting the risk profile of investing in African MSMEs.
+            Our First Loss Guarantee mechanism protects up to 75% of your deployed capital. If a youth-led business fails, we absorb the loss - radically shifting the risk profile of investing in African MSMEs.
           </p>
         </motion.div>
       </div>

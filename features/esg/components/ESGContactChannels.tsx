@@ -12,7 +12,7 @@ export function ESGContactChannels() {
     {
       num: "01",
       title: "GRIEVANCE REDRESS",
-      desc: "For project-affected persons and communities to raise environmental, social, or project-related concerns. Raising a grievance will not result in retaliation or affect your access to N-YIF financing.",
+      desc: "For project-affected persons and communities to raise environmental, social, or project-related concerns. Raising a grievance will not result in retaliation or affect your access to YEIB financing.",
       actionText: "Submit a Grievance",
       action: () => setShowGrievanceForm(true)
     },
@@ -50,9 +50,9 @@ export function ESGContactChannels() {
                 hidden: { y: "100%", opacity: 0 },
                 visible: { y: 0, opacity: 1, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }
               }}
-              className="font-[var(--font-asul)] text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight uppercase"
+              className="font-[var(--font-asul)] text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight capitalize"
             >
-              ACCOUNTABILITY IN ACTION.
+              Accountability In Action.
             </motion.h2>
           </div>
           <motion.p 
@@ -92,7 +92,7 @@ export function ESGContactChannels() {
               </div>
               
               <div className="mb-12 flex-grow">
-                <h3 className="font-[var(--font-asul)] text-3xl font-bold mb-6 tracking-tight uppercase">{channel.title}</h3>
+                <h3 className="font-[var(--font-asul)] text-3xl font-bold mb-6 tracking-tight capitalize">{channel.title}</h3>
                 <p className="text-lg text-[var(--color-evergreen)]/80 leading-relaxed font-medium">{channel.desc}</p>
               </div>
 
@@ -115,9 +115,9 @@ export function ESGContactChannels() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1, delay: 0.8 }}
-          className="mt-12 pt-8 border-t border-[var(--color-evergreen)]/20 text-xs md:text-sm text-[var(--color-evergreen)]/50 uppercase tracking-widest font-bold flex flex-col md:flex-row justify-between items-start md:items-center gap-4"
+          className="mt-12 pt-8 border-t border-[var(--color-evergreen)]/20 text-xs md:text-sm text-[var(--color-evergreen)]/50 capitalize tracking-widest font-bold flex flex-col md:flex-row justify-between items-start md:items-center gap-4"
         >
-          <span>DATA PROTECTION STATEMENT</span>
+          <span>Data Protection Statement</span>
           <span className="text-right max-w-2xl lowercase normal-case tracking-normal font-medium opacity-80">
             Any personal or sensitive information collected through our Grievance or Whistleblowing channels is strictly confidential, stored securely, and protected in accordance with the Nigerian Data Protection Regulation (NDPR).
           </span>
@@ -135,36 +135,36 @@ export function ESGContactChannels() {
               <X className="w-8 h-8 text-[var(--color-evergreen)]" strokeWidth={1} />
             </button>
             
-            <h2 className="font-[var(--font-asul)] text-4xl font-bold text-[var(--color-evergreen)] mb-2 uppercase">Submit a Grievance</h2>
+            <h2 className="font-[var(--font-asul)] text-4xl font-bold text-[var(--color-evergreen)] mb-2 capitalize">Submit a Grievance</h2>
             <p className="text-sm text-[var(--color-evergreen)]/70 mb-8 font-medium">This form is for environmental, social, or project-related concerns. You will not face retaliation for submitting a grievance.</p>
             
             <form className="space-y-6" onSubmit={(e) => { e.preventDefault(); alert("Form submitted successfully."); setShowGrievanceForm(false); }}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-xs font-bold tracking-widest uppercase text-[var(--color-evergreen)]/70 mb-2">Full Name (Optional)</label>
+                  <label className="block text-xs font-bold tracking-widest capitalize text-[var(--color-evergreen)]/70 mb-2">Full Name (Optional)</label>
                   <input type="text" className="w-full bg-transparent border-b border-[var(--color-evergreen)]/30 focus:border-[var(--color-tiger-orange)] py-3 px-0 focus:outline-none transition-colors rounded-none" placeholder="Jane Doe" />
                 </div>
                 <div>
-                  <label className="block text-xs font-bold tracking-widest uppercase text-[var(--color-evergreen)]/70 mb-2">Email or Phone Number</label>
+                  <label className="block text-xs font-bold tracking-widest capitalize text-[var(--color-evergreen)]/70 mb-2">Email or Phone Number</label>
                   <input type="text" className="w-full bg-transparent border-b border-[var(--color-evergreen)]/30 focus:border-[var(--color-tiger-orange)] py-3 px-0 focus:outline-none transition-colors rounded-none" placeholder="How can we reach you?" required />
                 </div>
               </div>
               
               <div>
-                <label className="block text-xs font-bold tracking-widest uppercase text-[var(--color-evergreen)]/70 mb-2">Project / Location</label>
+                <label className="block text-xs font-bold tracking-widest capitalize text-[var(--color-evergreen)]/70 mb-2">Project / Location</label>
                 <input type="text" className="w-full bg-transparent border-b border-[var(--color-evergreen)]/30 focus:border-[var(--color-tiger-orange)] py-3 px-0 focus:outline-none transition-colors rounded-none" placeholder="Which project does this concern?" required />
               </div>
               
               <div>
-                <label className="block text-xs font-bold tracking-widest uppercase text-[var(--color-evergreen)]/70 mb-2">Details of the Grievance</label>
+                <label className="block text-xs font-bold tracking-widest capitalize text-[var(--color-evergreen)]/70 mb-2">Details of the Grievance</label>
                 <textarea rows={5} className="w-full bg-transparent border-b border-[var(--color-evergreen)]/30 focus:border-[var(--color-tiger-orange)] py-3 px-0 focus:outline-none transition-colors rounded-none resize-none" placeholder="Please provide as much detail as possible..." required></textarea>
               </div>
               
               <div className="pt-8 flex flex-col sm:flex-row justify-end gap-4">
-                <Button type="button" variant="secondary" className="bg-transparent border border-[var(--color-evergreen)]/30 rounded-none py-6 uppercase tracking-widest text-xs" onClick={() => setShowGrievanceForm(false)}>
+                <Button type="button" variant="secondary" className="bg-transparent border border-[var(--color-evergreen)]/30 rounded-none py-6 capitalize tracking-widest text-xs" onClick={() => setShowGrievanceForm(false)}>
                   Cancel
                 </Button>
-                <Button type="submit" className="bg-[var(--color-tiger-orange)] hover:bg-orange-600 text-white rounded-none py-6 uppercase tracking-widest text-xs">
+                <Button type="submit" className="bg-[var(--color-tiger-orange)] hover:bg-orange-600 text-white rounded-none py-6 capitalize tracking-widest text-xs">
                   Submit Securely
                 </Button>
               </div>

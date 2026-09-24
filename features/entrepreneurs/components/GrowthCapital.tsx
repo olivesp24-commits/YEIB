@@ -49,7 +49,7 @@ export function GrowthCapital() {
               }}
               className="font-[var(--font-asul)] text-4xl md:text-6xl lg:text-7xl font-bold text-[var(--color-evergreen)] max-w-4xl tracking-tight leading-[1.1]"
             >
-              GROWTH CAPITAL, DIRECT OR THROUGH FUNDS YOU TRUST.
+              Growth Capital, Direct or Through Funds You Trust.
             </motion.h2>
           </div>
           <motion.p 
@@ -85,10 +85,10 @@ export function GrowthCapital() {
               }}
               className={`p-8 md:p-12 ${index !== points.length - 1 ? 'md:border-r border-b md:border-b-0 border-[var(--color-evergreen)]/20' : ''}`}
             >
-              <div className="text-[var(--color-tiger-orange)] font-bold text-xs tracking-widest uppercase mb-6">
+              <div className="text-[var(--color-tiger-orange)] font-bold text-xs tracking-widest capitalize mb-6">
                 0{index + 1}
               </div>
-              <h3 className="font-bold text-[var(--color-evergreen)] text-2xl mb-4 uppercase">{point.title}</h3>
+              <h3 className="font-bold text-[var(--color-evergreen)] text-2xl mb-4 capitalize">{point.title}</h3>
               <p className="text-[var(--color-evergreen)]/70 text-lg leading-relaxed">{point.desc}</p>
             </motion.div>
           ))}

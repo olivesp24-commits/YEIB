@@ -7,7 +7,7 @@ export function RiskBanksWont() {
   const points = [
     {
       title: "Commercial Lending",
-      desc: "We pledge our balance sheet so commercial banks can confidently extend credit to your business at sustainable rates."
+      desc: "We pledge our balance sheet so commercial lenders and MFIs can confidently extend credit to your business at sustainable rates."
     },
     {
       title: "Microfinance",
@@ -37,7 +37,7 @@ export function RiskBanksWont() {
               hidden: { opacity: 0, scale: 0.9 },
               visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } }
             }}
-            className="inline-block px-4 py-1.5 rounded-full border border-[var(--color-tiger-orange)] text-[var(--color-tiger-orange)] text-xs font-bold tracking-widest uppercase mb-12"
+            className="inline-block px-4 py-1.5 rounded-full border border-[var(--color-tiger-orange)] text-[var(--color-tiger-orange)] text-xs font-bold tracking-widest capitalize mb-12"
           >
             Credit Guarantee Fund
           </motion.div>
@@ -48,11 +48,11 @@ export function RiskBanksWont() {
                 hidden: { y: "100%", opacity: 0 },
                 visible: { y: 0, opacity: 1, transition: { duration: 0.9, ease: [0.16, 1, 0.3, 1] } }
               }}
-              className="font-[var(--font-asul)] text-5xl sm:text-7xl md:text-[96px] lg:text-[110px] leading-[0.9] font-bold text-[var(--color-evergreen)] mb-16 tracking-tighter uppercase"
+              className="font-[var(--font-asul)] text-5xl sm:text-7xl md:text-[96px] lg:text-[110px] leading-[0.9] font-bold text-[var(--color-evergreen)] mb-16 tracking-tighter capitalize"
             >
-              WE TAKE ON <br />
-              THE RISK <span className="text-[var(--color-tiger-orange)]">BANKS</span> <br />
-              WON&apos;T.
+              We Take On <br />
+              The Risk <span className="text-[var(--color-tiger-orange)]">Lenders</span> <br />
+              Won&apos;t.
             </motion.h2>
           </div>
           
@@ -88,7 +88,7 @@ export function RiskBanksWont() {
               }}
               className="flex flex-col items-center text-center border-t border-[var(--color-evergreen)]/20 pt-8"
             >
-              <h3 className="font-bold text-[var(--color-evergreen)] text-xl md:text-2xl mb-4 uppercase">{point.title}</h3>
+              <h3 className="font-bold text-[var(--color-evergreen)] text-xl md:text-2xl mb-4 capitalize">{point.title}</h3>
               <p className="text-[var(--color-evergreen)]/70 text-lg leading-relaxed">{point.desc}</p>
             </motion.div>
           ))}

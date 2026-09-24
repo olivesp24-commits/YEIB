@@ -9,19 +9,19 @@ export function BusinessStageMatrix() {
   const stages = [
     {
       num: "01",
-      stage: "IDEA & SEED STAGE",
+      stage: "Idea & Seed Stage",
       instrument: "Ecosystem Development",
       pathways: "Grants, Bootcamps, Advisory Services"
     },
     {
       num: "02",
-      stage: "EARLY & GROWTH",
+      stage: "Early & Growth",
       instrument: "Credit Guarantee",
       pathways: "Commercial & Microfinance Loans"
     },
     {
       num: "03",
-      stage: "SCALING & MARKET ENTRY",
+      stage: "Scaling & Market Entry",
       instrument: "Direct Equity",
       pathways: "Growth Capital, Private Equity Partners"
     }
@@ -47,8 +47,8 @@ export function BusinessStageMatrix() {
               }}
               className="font-[var(--font-asul)] text-3xl md:text-5xl font-bold mb-4 tracking-tight"
             >
-              THREE STAGES. A CLEAR PATHWAY. <br /> 
-              ALL THE WAY, OR JUST AS FAR AS YOU WANT.
+              Three Stages. A Clear Pathway. <br /> 
+              All the Way, or Just as Far as You Want.
             </motion.h2>
           </div>
           <motion.p 
@@ -88,10 +88,10 @@ export function BusinessStageMatrix() {
               </div>
               
               <div className="mb-12 flex-grow">
-                <div className="text-sm font-bold tracking-widest uppercase text-[var(--color-evergreen)]/50 mb-2">Instrument</div>
+                <div className="text-sm font-bold tracking-widest capitalize text-[var(--color-evergreen)]/50 mb-2">Instrument</div>
                 <div className="text-2xl font-bold mb-8">{row.instrument}</div>
                 
-                <div className="text-sm font-bold tracking-widest uppercase text-[var(--color-evergreen)]/50 mb-2">Access Pathways</div>
+                <div className="text-sm font-bold tracking-widest capitalize text-[var(--color-evergreen)]/50 mb-2">Access Pathways</div>
                 <div className="text-lg text-[var(--color-evergreen)]/80 leading-relaxed">{row.pathways}</div>
               </div>
 

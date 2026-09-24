@@ -6,7 +6,7 @@ export function FundingOverview() {
   const financialServices = [
     { title: "Direct Investment", desc: "Capital directly injected into high-growth youth & women-led MSMEs." },
     { title: "Intermediaries", desc: "Funding deployed through trusted PE, VC, and fintech partners." },
-    { title: "Bank Guarantees", desc: "Risk coverage up to 75% for commercial and microfinance banks lending to our target demographic." }
+    { title: "Credit Guarantees", desc: "Risk coverage up to 75% for commercial lenders and MFIs lending to our target demographic." }
   ];
 
   const nonFinancialServices = [

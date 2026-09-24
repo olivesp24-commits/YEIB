@@ -23,19 +23,19 @@ export function EntrepreneursHero() {
       <div className="relative z-10 container mx-auto px-4 md:px-8 text-left text-white max-w-6xl flex flex-col justify-center h-full">
         <div className="max-w-xl mt-20 md:mt-0">
           <FadeIn direction="up">
-            <div className="inline-block px-4 py-1.5 rounded-full bg-[var(--color-tiger-orange)] text-white text-xs font-bold tracking-widest uppercase mb-8">
+            <div className="inline-block px-4 py-1.5 rounded-full bg-[var(--color-tiger-orange)] text-white text-xs font-bold tracking-widest capitalize mb-8">
               Founders
             </div>
             
             <h1 className="mb-6 font-[var(--font-asul)] text-4xl lg:text-5xl leading-[1.15] font-bold text-white drop-shadow-sm">
-              Capital and support, <br className="hidden md:block" />
-              structured for how <br className="hidden md:block" />
-              your business <br className="hidden md:block" />
-              grows.
+              Capital and Support, <br className="hidden md:block" />
+              Structured for How <br className="hidden md:block" />
+              Your Business <br className="hidden md:block" />
+              Grows.
             </h1>
             
             <p className="text-lg md:text-xl text-white/90 leading-relaxed font-medium mb-10">
-              We don&apos;t just invest where you are leading. YEIB is an institutional bridge connecting you to — equity, credit guarantees, and ecosystem support — across stages. Because true potential needs patient momentum to reach your goals.
+              We don&apos;t just invest where you are leading. YEIB is an institutional bridge connecting you to - equity, credit guarantees, and ecosystem support - across stages. Because true potential needs patient momentum to reach your goals.
             </p>
 
             <div className="flex flex-col sm:flex-row justify-start items-center gap-4">

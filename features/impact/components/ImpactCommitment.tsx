@@ -41,7 +41,7 @@ export function ImpactCommitment() {
               }}
               className="font-[var(--font-asul)] text-4xl sm:text-5xl md:text-7xl lg:text-[80px] leading-[1.05] font-bold text-white tracking-tighter"
             >
-              AS WE DEPLOY CAPITAL, WE&apos;LL PUBLISH WHAT WE FIND HERE — NOT JUST WHAT LOOKS GOOD.
+              As We Deploy Capital, We&apos;ll Publish What We Find Here - Not Just What Looks Good.
             </motion.h2>
           </div>
         </motion.div>
@@ -56,7 +56,7 @@ export function ImpactCommitment() {
           }}
           className="md:w-1/4 pt-4 md:border-l border-white/20 md:pl-12"
         >
-          <div className="text-[var(--color-tiger-orange)] font-bold text-xs tracking-widest uppercase mb-6">
+          <div className="text-[var(--color-tiger-orange)] font-bold text-xs tracking-widest capitalize mb-6">
             Accountability
           </div>
           <p className="text-xl md:text-2xl text-white/70 leading-relaxed font-medium">

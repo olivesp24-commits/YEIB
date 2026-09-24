@@ -8,7 +8,7 @@ export function CoreValues() {
     },
     {
       title: "Teamwork",
-      desc: "We build collaborative partnerships with government, DFIs, commercial banks, and founders to achieve shared success."
+      desc: "We build collaborative partnerships with government, DFIs, commercial lenders, and founders to achieve shared success."
     },
     {
       title: "Responsibility",
@@ -20,7 +20,7 @@ export function CoreValues() {
     <section className="py-24 md:py-32 bg-[var(--color-evergreen)] text-white">
       <div className="container mx-auto px-4 max-w-6xl">
         <FadeIn direction="up" className="mb-16">
-          <div className="inline-block px-4 py-1.5 rounded-full border border-white/30 text-white text-xs font-bold tracking-widest uppercase mb-6">
+          <div className="inline-block px-4 py-1.5 rounded-full border border-white/30 text-white text-xs font-bold tracking-widest capitalize mb-6">
             Core Values
           </div>
           <h2 className="font-[var(--font-asul)] text-3xl md:text-5xl font-bold">

@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
+import { motion, useInView, useAnimation } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 interface FadeInProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -15,66 +16,60 @@ export function FadeIn({
   direction = "up",
   ...props
 }: FadeInProps) {
-  const [isVisible, setIsVisible] = useState(false);
-  const domRef = useRef<HTMLDivElement>(null);
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "0px 0px -50px 0px" });
+  const controls = useAnimation();
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setIsVisible(true);
-            if (domRef.current) observer.unobserve(domRef.current);
-          }
-        });
-      },
-      { threshold: 0.1, rootMargin: "50px" }
-    );
-
-    const currentRef = domRef.current;
-    if (currentRef) {
-      observer.observe(currentRef);
-    }
-
-    // Failsafe: Force visibility after a delay if observer fails
-    const fallback = setTimeout(() => setIsVisible(true), 1500);
-
-    return () => {
-      clearTimeout(fallback);
-      if (currentRef) {
-        observer.unobserve(currentRef);
-      }
-    };
+    setMounted(true);
   }, []);
 
-  const getDirectionClasses = () => {
+  useEffect(() => {
+    if (isInView && mounted) {
+      controls.start("visible");
+    }
+  }, [isInView, controls, mounted]);
+
+  // Normalize delay: if it's > 10, it's likely ms, otherwise it's seconds
+  const normalizedDelay = delay > 10 ? delay / 1000 : delay;
+
+  const getDirectionOffset = () => {
     switch (direction) {
-      case "up":
-        return "translate-y-8";
-      case "down":
-        return "-translate-y-8";
-      case "left":
-        return "translate-x-8";
-      case "right":
-        return "-translate-x-8";
-      default:
-        return "";
+      case "up": return { y: 40, x: 0 };
+      case "down": return { y: -40, x: 0 };
+      case "left": return { x: 40, y: 0 };
+      case "right": return { x: -40, y: 0 };
+      default: return { x: 0, y: 0 };
     }
   };
 
+  const offset = getDirectionOffset();
+
   return (
-    <div
-      ref={domRef}
-      className={cn(
-        "transition-all duration-700 ease-out",
-        isVisible ? "opacity-100 translate-y-0 translate-x-0" : "opacity-0",
-        !isVisible && getDirectionClasses(),
-        className
-      )}
-      style={{ transitionDelay: `${delay}ms` }}
-      {...props}
+    <motion.div
+      ref={ref}
+      initial="hidden"
+      animate={controls}
+      variants={{
+        hidden: { opacity: 0, ...offset },
+        visible: { 
+          opacity: 1, 
+          x: 0, 
+          y: 0,
+          transition: { 
+            type: "spring",
+            damping: 25,
+            stiffness: 120,
+            delay: normalizedDelay,
+            duration: 0.8
+          }
+        }
+      }}
+      className={cn(className)}
+      {...(props as any)}
     >
       {children}
-    </div>
+    </motion.div>
   );
 }

@@ -18,10 +18,10 @@ export function InstitutionalPartners() {
       desc: "Providing wholesale funding and risk-sharing facilities to Nigerian MSMEs."
     },
     { 
-      name: "CBN", 
+      name: "Ministry of Finance", 
       role: "Strategic Partner", 
-      logo: "/partner-logo/cbn-logo.png",
-      desc: "The apex monetary authority ensuring financial system stability in Nigeria."
+      logo: "/partner-logo/coat-of-arm-logo.png",
+      desc: "Formulating and managing Nigeria's economic and fiscal policies."
     },
     { 
       name: "AfDB", 
@@ -30,16 +30,16 @@ export function InstitutionalPartners() {
       desc: "Spurring sustainable economic development and social progress across Africa."
     },
     { 
-      name: "Ministry of Finance", 
+      name: "SEC", 
       role: "Strategic Partner", 
-      logo: "/partner-logo/coat-of-arm-logo.png",
-      desc: "Formulating and managing Nigeria's economic and fiscal policies."
+      logo: "/partner-logo/sec-logo.png",
+      desc: "The apex regulatory body for Nigeria's capital market."
     },
     { 
-      name: "UN Women", 
+      name: "MOFI", 
       role: "Strategic Partner", 
-      logo: "/partner-logo/un-women-logo.png",
-      desc: "Dedicated to gender equality and the empowerment of women globally."
+      logo: "/partner-logo/mofi-logo.png",
+      desc: "Managing federal government investments and assets."
     }
   ];
 
@@ -53,7 +53,7 @@ export function InstitutionalPartners() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="font-[var(--font-asul)] text-3xl md:text-5xl font-bold text-[var(--color-evergreen)] uppercase tracking-tight">
+            <h2 className="font-[var(--font-asul)] text-3xl md:text-5xl font-bold text-[var(--color-evergreen)] capitalize tracking-tight">
               Backed By
             </h2>
           </motion.div>
@@ -88,7 +88,7 @@ export function InstitutionalPartners() {
               className="group bg-white p-8 md:p-12 flex flex-col justify-center items-center text-center aspect-square md:aspect-auto md:min-h-[250px] hover:bg-[var(--color-mint-cream)] transition-colors duration-300 relative overflow-hidden"
             >
               {/* Role (Visible by default, hidden on hover) */}
-              <div className="text-[var(--color-tiger-orange)] text-xs font-bold uppercase tracking-widest mb-4 z-10 transition-opacity duration-300 group-hover:opacity-0">
+              <div className="text-[var(--color-tiger-orange)] text-xs font-bold capitalize tracking-widest mb-4 z-10 transition-opacity duration-300 group-hover:opacity-0">
                 {partner.role}
               </div>
               
@@ -104,7 +104,7 @@ export function InstitutionalPartners() {
 
               {/* Description (Hidden by default, visible on hover) */}
               <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20 pointer-events-none p-6 md:p-8">
-                <div className="text-[var(--color-tiger-orange)] text-xs font-bold uppercase tracking-widest mb-3">
+                <div className="text-[var(--color-tiger-orange)] text-xs font-bold capitalize tracking-widest mb-3">
                   {partner.name}
                 </div>
                 <div className="text-sm md:text-base text-[var(--color-evergreen)] font-medium leading-relaxed">

@@ -10,9 +10,9 @@ export function WhatIsYEIB() {
               A platform that funds funders.
             </h2>
             <p className="text-lg text-[var(--color-evergreen)]/80 mb-8 leading-relaxed">
-              YEIB Investment Fund is a wholesale investment platform designed to make youth- and women-led MSMEs in Nigeria bankable and investable. By sitting at the intersection of public and private capital, we derisk investments and build the ecosystem required for long-term growth.
+              N-YEIB Investment Funds is a wholesale investment platform designed to make youth- and women-led MSMEs in Nigeria investment-ready. By sitting at the intersection of public and private capital, we derisk investments and build the ecosystem required for long-term growth.
             </p>
-            <div className="flex items-center gap-4 text-sm font-semibold text-[var(--color-tiger-orange)] uppercase tracking-wider">
+            <div className="flex items-center gap-4 text-sm font-semibold text-[var(--color-tiger-orange)] capitalize tracking-wider">
               <span className="w-8 h-0.5 bg-[var(--color-tiger-orange)]"></span>
               The Institutional Bridge
             </div>

@@ -4,10 +4,10 @@ import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const STATS = [
-  { value: 4000, prefix: "", suffix: "+", label: "Direct and Indirect Jobs", bg: "#F7E3D3", ink: "#10173A" },
-  { value: 200, prefix: "", suffix: "+", label: "ESOs Mobilised", bg: "#D9EAF6", ink: "#10173A" },
+  { value: 1600000, prefix: "~", suffix: "", label: "Direct and Indirect Jobs", bg: "#F7E3D3", ink: "#10173A" },
+  { value: 118, prefix: "", suffix: "", label: "ESOs Mobilised", bg: "#D9EAF6", ink: "#10173A" },
   { value: 5, prefix: "Year ", suffix: "", label: "Gender-Parity Target", bg: "#F1ECE3", ink: "#10173A" },
-  { value: 10000, prefix: "", suffix: "+", label: "Businesses Supported", bg: "#F7E3D3", ink: "#10173A" },
+  { value: 38400, prefix: "~", suffix: "", label: "Businesses Supported", bg: "#F7E3D3", ink: "#10173A" },
 ];
 
 const CountUpNumber = ({ value, prefix, suffix }: { value: number, prefix: string, suffix: string }) => {
@@ -115,7 +115,7 @@ export function AnimatedStats() {
               <div className="h-px bg-current opacity-40 w-12 md:w-32" />
               <div className="flex flex-col items-center text-center min-w-[200px] md:min-w-[320px]">
                 <CountUpNumber value={currentStat.value} prefix={currentStat.prefix} suffix={currentStat.suffix} />
-                <p className="mt-4 text-sm md:text-lg tracking-widest uppercase font-bold opacity-80">
+                <p className="mt-4 text-sm md:text-lg tracking-widest capitalize font-bold opacity-80">
                   {currentStat.label}
                 </p>
               </div>

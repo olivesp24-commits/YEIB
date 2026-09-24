@@ -13,12 +13,12 @@ export function ESGHero() {
       <div className="w-full md:w-1/2 flex items-center justify-center p-8 md:p-16 lg:p-24 relative z-10">
         <div className="max-w-xl w-full mt-20 md:mt-0">
           <FadeIn direction="up">
-            <div className="inline-block px-4 py-1.5 rounded-full bg-[var(--color-tiger-orange)] text-white text-xs font-bold tracking-widest uppercase mb-8">
+            <div className="inline-block px-4 py-1.5 rounded-full bg-[var(--color-tiger-orange)] text-white text-xs font-bold tracking-widest capitalize mb-8">
               ESG & Sustainability
             </div>
             
             <h1 className="font-[var(--font-asul)] text-4xl sm:text-5xl md:text-6xl lg:text-[72px] leading-[1.1] font-bold text-white mb-8">
-              Responsible investment for sustainable impact.
+              Responsible Investment for Sustainable Impact.
             </h1>
             
             <p className="text-lg md:text-xl text-white/80 leading-relaxed mb-10">

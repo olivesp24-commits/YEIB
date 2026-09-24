@@ -34,23 +34,23 @@ export function Navbar() {
         
         {/* Desktop Nav */}
         <nav className="hidden lg:flex items-center gap-6">
-          <Link href="/about" className="text-sm font-semibold text-[var(--color-evergreen)] hover:text-[var(--color-mint-leaf)] transition-colors">
+          <Link href="/about" className="text-sm font-bold text-[var(--color-evergreen)] hover:text-[var(--color-mint-leaf)] transition-colors">
             What We Do
           </Link>
-          <Link href="/entrepreneurs" className="text-sm font-semibold text-[var(--color-evergreen)] hover:text-[var(--color-mint-leaf)] transition-colors">
+          <Link href="/entrepreneurs" className="text-sm font-bold text-[var(--color-evergreen)] hover:text-[var(--color-mint-leaf)] transition-colors">
             Who We Serve
           </Link>
-          <Link href="/impact" className="text-sm font-semibold text-[var(--color-evergreen)] hover:text-[var(--color-mint-leaf)] transition-colors">
+          <Link href="/impact" className="text-sm font-bold text-[var(--color-evergreen)] hover:text-[var(--color-mint-leaf)] transition-colors">
             Impact
           </Link>
-          <Link href="/investors" className="text-sm font-semibold text-[var(--color-evergreen)] hover:text-[var(--color-mint-leaf)] transition-colors">
+          <Link href="/investors" className="text-sm font-bold text-[var(--color-evergreen)] hover:text-[var(--color-mint-leaf)] transition-colors">
             Partners
           </Link>
-          <Link href="/esg" className="text-sm font-semibold text-[var(--color-evergreen)] hover:text-[var(--color-mint-leaf)] transition-colors">
+          <Link href="/esg" className="text-sm font-bold text-[var(--color-evergreen)] hover:text-[var(--color-mint-leaf)] transition-colors">
             ESG
           </Link>
           <div className="relative group">
-            <button className="text-sm font-semibold text-[var(--color-evergreen)] group-hover:text-[var(--color-mint-leaf)] transition-colors">
+            <button className="text-sm font-bold text-[var(--color-evergreen)] group-hover:text-[var(--color-mint-leaf)] transition-colors">
               Contact Us
             </button>
             
